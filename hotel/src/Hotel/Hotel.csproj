@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AE35F29-0B56-4DE1-9B74-7998D71DC29D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TravelHubApi.Sdk.Hotel</RootNamespace>
+    <AssemblyName>TravelHubApi.Sdk.Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>74ff2c6a</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\Hosts.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="V1\Client.cs" />
+    <Compile Include="V1\Models\Accommodation.cs" />
+    <Compile Include="V1\Models\Accommodations.cs" />
+    <Compile Include="V1\Models\Address.cs" />
+    <Compile Include="V1\Models\Availability.cs" />
+    <Compile Include="V1\Models\BankerRate.cs" />
+    <Compile Include="V1\Models\City.cs" />
+    <Compile Include="V1\Models\Contacts.cs" />
+    <Compile Include="V1\Models\Country.cs" />
+    <Compile Include="V1\Models\CurrencyCode.cs" />
+    <Compile Include="V1\Models\Document.cs" />
+    <Compile Include="V1\Models\Enums\Bed.cs" />
+    <Compile Include="V1\Models\Enums\DocumentType.cs" />
+    <Compile Include="V1\Models\Enums\Gender.cs" />
+    <Compile Include="V1\Models\Enums\GuestType.cs" />
+    <Compile Include="V1\Models\Enums\HighlightType.cs" />
+    <Compile Include="V1\Models\Enums\RoomType.cs" />
+    <Compile Include="V1\Models\Facilities.cs" />
+    <Compile Include="V1\Models\Facility.cs" />
+    <Compile Include="V1\Models\FacilityItem.cs" />
+    <Compile Include="V1\Models\FacilityItems.cs" />
+    <Compile Include="V1\Models\Fare.cs" />
+    <Compile Include="V1\Models\FareDetail.cs" />
+    <Compile Include="V1\Models\FareDetails.cs" />
+    <Compile Include="V1\Models\Fares.cs" />
+    <Compile Include="V1\Models\Fine.cs" />
+    <Compile Include="V1\Models\Fines.cs" />
+    <Compile Include="V1\Models\Guest.cs" />
+    <Compile Include="V1\Models\Guests.cs" />
+    <Compile Include="V1\Models\Highlight.cs" />
+    <Compile Include="V1\Models\Hotel.cs" />
+    <Compile Include="V1\Models\Hotels.cs" />
+    <Compile Include="V1\Models\Image.cs" />
+    <Compile Include="V1\Models\Images.cs" />
+    <Compile Include="V1\Models\Location.cs" />
+    <Compile Include="V1\Models\Locator.cs" />
+    <Compile Include="V1\Models\MealPlan.cs" />
+    <Compile Include="V1\Models\MonetaryValue.cs" />
+    <Compile Include="V1\Models\Parameters\Body\BookBody.cs" />
+    <Compile Include="V1\Models\Parameters\Body\CancellationPoliceBody.cs" />
+    <Compile Include="V1\Models\Parameters\Url\AvailabilitiesUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\Url\CancellationPoliceUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\Url\FacilityUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\Url\HighlightUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\Url\HotelUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\Url\ImageUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\Url\LocationUrlParams.cs" />
+    <Compile Include="V1\Models\Period.cs" />
+    <Compile Include="V1\Models\Phone.cs" />
+    <Compile Include="V1\Models\Returns\AvailabilitiesReturn.cs" />
+    <Compile Include="V1\Models\Returns\BookReturn.cs" />
+    <Compile Include="V1\Models\Returns\CancellationPoliciesReturn.cs" />
+    <Compile Include="V1\Models\Returns\HighlightsReturn.cs" />
+    <Compile Include="V1\Models\Returns\LocationsReturn.cs" />
+    <Compile Include="V1\Models\Room.cs" />
+    <Compile Include="V1\Models\State.cs" />
+    <Compile Include="V1\Models\Tax.cs" />
+    <Compile Include="V1\Models\Taxes.cs" />
+    <Compile Include="V1\Models\TimeResult.cs" />
+    <Compile Include="V1\Models\TimeResults.cs" />
+    <Compile Include="V1\Models\Value.cs" />
+    <Compile Include="V1\Models\Vendor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\common\src\Common\Common.csproj">
+      <Project>{19d34303-1692-427e-a414-339bfc44aa25}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\oauth\src\OAuth\OAuth.csproj">
+      <Project>{57a1ba12-eb63-4c26-9e50-6f39caae643e}</Project>
+      <Name>OAuth</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\..\..\packages\StyleCop.MSBuild.4.7.54.0\build\StyleCop.MSBuild.Targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\StyleCop.MSBuild.4.7.54.0\build\StyleCop.MSBuild.Targets'))" />
+  </Target>
+  <Import Project="..\..\..\packages\StyleCop.MSBuild.4.7.54.0\build\StyleCop.MSBuild.Targets" Condition="Exists('..\..\..\packages\StyleCop.MSBuild.4.7.54.0\build\StyleCop.MSBuild.Targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
