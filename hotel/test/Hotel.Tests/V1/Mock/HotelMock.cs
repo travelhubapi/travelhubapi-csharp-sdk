@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
 using TravelHubApi.Sdk.Common.V1.Helpers;
-using TravelHubApi.Sdk.Hotel.V1.Models.Returns;
 using TravelHubApi.Sdk.Common.V1.Extensions;
 using Newtonsoft.Json;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
@@ -86,9 +85,9 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             return LoadJson("V1/Mock/Json/ResponseAvailabilities.json");
         }
 
-        public static AvailabilitiesReturn GetAvailabilitiesResponse()
+        public static Availabilities GetAvailabilitiesResponse()
         {
-            return GetAvailabilitiesJSONResponse().ToObject<AvailabilitiesReturn>();
+            return GetAvailabilitiesJSONResponse().ToObject<Availabilities>();
         }
         #endregion
 
@@ -200,9 +199,9 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             return LoadJson("V1/Mock/Json/RequestBooking.json");
         }
 
-        public static BookReturn GetBookResponse()
+        public static Booking GetBookResponse()
         {
-            return GetBookJSONResponse().ToObject<BookReturn>();
+            return GetBookJSONResponse().ToObject<Booking>();
         }
 
         public static BookBody GetBookRequest()

@@ -18,7 +18,6 @@ using TravelHubApi.Sdk.Hotel.V1;
 using System.Net;
 using TravelHubApi.Sdk.Hotel.Tests.V1.Mock;
 using TravelHubApi.Sdk.Common.V1.Extensions;
-using TravelHubApi.Sdk.Hotel.V1.Models.Returns;
 using FluentAssertions;
 using System.Globalization;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
@@ -59,7 +58,7 @@ namespace TravelHub.Infra.Broker.Flytour.Aereo.Testes
             var availabilitiesExpected = HotelMock.GetAvailabilitiesResponse();
 
             availabilities.Should().NotBeNull();
-            availabilities.ShouldBeEquivalentTo<AvailabilitiesReturn>(availabilitiesExpected, 
+            availabilities.ShouldBeEquivalentTo<Availabilities>(availabilitiesExpected, 
                 options => options.AllowingInfiniteRecursion());
             availabilities.ToJson().Should().Be(HotelMock.GetAvailabilitiesJSONResponse());
         }
@@ -120,7 +119,7 @@ namespace TravelHub.Infra.Broker.Flytour.Aereo.Testes
             var bookingExpected = HotelMock.GetBookResponse();
 
             booking.Should().NotBeNull();
-            booking.ShouldBeEquivalentTo<BookReturn>(bookingExpected);
+            booking.ShouldBeEquivalentTo<Booking>(bookingExpected);
             booking.ToJson().Should().Equals(HotelMock.GetBookJSONResponse());
         }
     }

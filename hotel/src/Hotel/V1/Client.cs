@@ -4,7 +4,6 @@ using System.Net.Http;
 using TravelHubApi.Sdk.Common.V1.Helpers;
 using TravelHubApi.Sdk.Hotel.Parameters.V1.Url;
 using TravelHubApi.Sdk.Hotel.V1.Helpers;
-using TravelHubApi.Sdk.Hotel.V1.Models.Returns;
 using TravelHubApi.Sdk.Common.V1.Extensions;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
 using System.Text;
@@ -68,7 +67,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
             return images;
         }
 
-        public AvailabilitiesReturn GetAvailabilities(string destination, DateTime checkIn, DateTime checkOut)
+        public Availabilities GetAvailabilities(string destination, DateTime checkIn, DateTime checkOut)
         {
             var uri = new Uri(string.Format("{0}/{1}/availabilities/{2}/{3}/{4}",
                 _host, 
@@ -78,19 +77,19 @@ namespace TravelHubApi.Sdk.Hotel.V1
                 checkOut.ToString("yyyy-MM-dd")));
             var response = _oauth2.Request(HttpMethods.Get, uri).Result;
             var result = response.Content.ReadAsStringAsync().Result;
-            var availabilities = result.ToObject<AvailabilitiesReturn>();
+            var availabilities = result.ToObject<Availabilities>();
 
             return availabilities;
         }
         #endregion
 
-        public BookReturn Book(BookBody bookrequest)
+        public Booking Book(BookBody bookrequest)
         {
             var uri = new Uri(string.Format("{0}/{1}/bookings", _host, VERSION));
             var bookRequestContent = new StringContent(bookrequest.ToJson(), Encoding.UTF8, "application/json");
             var response = _oauth2.Request(HttpMethods.Post, uri, bookRequestContent).Result;
             var result = response.Content.ReadAsStringAsync().Result;
-            var booking = result.ToObject<BookReturn>();
+            var booking = result.ToObject<Booking>();
 
             return booking;
         }

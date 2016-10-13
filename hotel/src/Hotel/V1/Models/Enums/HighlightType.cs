@@ -5,6 +5,7 @@ using System.Text;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Enums
 {
+    [Serializable]
     public enum HighlightType
     {
         All = 0,

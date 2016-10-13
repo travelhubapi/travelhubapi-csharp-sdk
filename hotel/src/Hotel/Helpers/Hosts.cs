@@ -1,7 +1,6 @@
 ﻿using System.Net;
 using TravelHubApi.Sdk.Common.V1.Helpers;
 using TravelHubApi.Sdk.Hotel.Parameters.V1.Url;
-using TravelHubApi.Sdk.Hotel.V1.Models.Returns;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Helpers
 {
