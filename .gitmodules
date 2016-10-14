@@ -1,0 +1,3 @@
+[submodule "libs/oauth2-client-handler"]
+	path = libs/oauth2-client-handler
+	url = https://github.com/travelhubapi/oauth2-client-handler

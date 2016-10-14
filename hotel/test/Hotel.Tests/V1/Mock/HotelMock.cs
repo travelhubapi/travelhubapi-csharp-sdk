@@ -51,7 +51,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             oauthMock
                 .Setup(foo => foo.RequestAsync(It.Is<HttpMethods>(
                     i => i.Equals(method)),
-                    It.Is<Uri>(i => i.AbsoluteUri == uri),
+                    It.Is<String>(i => i == uri),
                     It.Is<HttpContent>(expression)))
                 .Returns(() =>
                 {

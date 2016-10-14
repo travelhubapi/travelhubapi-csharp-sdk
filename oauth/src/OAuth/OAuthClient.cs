@@ -38,7 +38,7 @@ namespace TravelHubApi.Sdk.OAuth
         private AuthorizerOptions authorizerOptions { get; set; }
         private OAuthHttpHandlerOptions options { get; set; }
         private OAuthHttpHandler oAuthHttpHandler { get; set; }
-        private HttpClient client { get; set; }
+        public OAuthHttpClient client { get; set; }
 
         public OAuthClient(Settings settings)
         {
@@ -76,15 +76,10 @@ namespace TravelHubApi.Sdk.OAuth
 
             oAuthHttpHandler = new OAuthHttpHandler(options);
 
-            client = 
-                //customHandler != null ?
-                //HttpClientFactory.Create(customHandler, oAuthHttpHandler) :
-                new HttpClient(oAuthHttpHandler);
-
-
+            client = OAuthHttpClient.Factory(options);
         }
 
-        public virtual Task<HttpResponseMessage> RequestAsync(HttpMethods method, Uri uri, HttpContent content = null)
+        public virtual Task<HttpResponseMessage> RequestAsync(HttpMethods method, string uri, HttpContent content = null)
         {
             Task<HttpResponseMessage> response;
 

@@ -44,10 +44,6 @@
       <HintPath>..\..\..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OAuth2ClientHandler, Version=1.0.0.16, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\oauth2-client-handler\src\OAuth2ClientHandler\bin\Debug\OAuth2ClientHandler.dll</HintPath>
-    </Reference>
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
       <Private>True</Private>
@@ -76,6 +72,10 @@
     <ProjectReference Include="..\..\..\common\src\Common\Common.csproj">
       <Project>{19d34303-1692-427e-a414-339bfc44aa25}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libs\oauth2-client-handler\src\OAuth2ClientHandler\OAuth2ClientHandler.csproj">
+      <Project>{d9da6892-068d-4263-b8ea-ebfeb5362259}</Project>
+      <Name>OAuth2ClientHandler</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

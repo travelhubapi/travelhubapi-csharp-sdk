@@ -107,7 +107,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Mock\OAuthClientMock.cs" />
+    <Compile Include="Mock\OAuthClientMockFixture.cs" />
+    <Compile Include="Mock\URLs.cs" />
     <Compile Include="OAuthClientTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -115,6 +116,10 @@
     <ProjectReference Include="..\..\..\common\src\Common\Common.csproj">
       <Project>{19d34303-1692-427e-a414-339bfc44aa25}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libs\oauth2-client-handler\src\OAuth2ClientHandler\OAuth2ClientHandler.csproj">
+      <Project>{d9da6892-068d-4263-b8ea-ebfeb5362259}</Project>
+      <Name>OAuth2ClientHandler</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\OAuth\OAuth.csproj">
       <Project>{57a1ba12-eb63-4c26-9e50-6f39caae643e}</Project>

@@ -40,7 +40,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
         /// <returns></returns>
         public Models.Hotel GetHotel(string broker, string track)
         {
-            var uri = new Uri(string.Format("{0}/{1}/hotels/{2}/{3}", _host, VERSION, broker, track));
+            var uri = string.Format("{0}/{1}/hotels/{2}/{3}", _host, VERSION, broker, track);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
             var result = response.Content.ReadAsStringAsync().Result;
             var hotel = result.ToObject<Models.Hotel>();
@@ -50,7 +50,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
 
         public Facilities GetFacilities(string broker, string track)
         {
-            var uri = new Uri(string.Format("{0}/{1}/hotels/{2}/{3}/facilities", _host, VERSION, broker, track));
+            var uri = string.Format("{0}/{1}/hotels/{2}/{3}/facilities", _host, VERSION, broker, track);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
             var result = response.Content.ReadAsStringAsync().Result;
             var facilities = result.ToObject<Facilities>();
@@ -60,7 +60,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
 
         public Images GetImages(string broker, string track)
         {
-            var uri = new Uri(string.Format("{0}/{1}/hotels/{2}/{3}/images", _host, VERSION, broker, track));
+            var uri = string.Format("{0}/{1}/hotels/{2}/{3}/images", _host, VERSION, broker, track);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
             var result = response.Content.ReadAsStringAsync().Result;
             var images = result.ToObject<Images>();
@@ -70,12 +70,12 @@ namespace TravelHubApi.Sdk.Hotel.V1
 
         public Availabilities GetAvailabilities(string destination, DateTime checkIn, DateTime checkOut)
         {
-            var uri = new Uri(string.Format("{0}/{1}/availabilities/{2}/{3}/{4}",
+            var uri = string.Format("{0}/{1}/availabilities/{2}/{3}/{4}",
                 _host, 
                 VERSION, 
                 destination, 
                 checkIn.ToString("yyyy-MM-dd"), 
-                checkOut.ToString("yyyy-MM-dd")));
+                checkOut.ToString("yyyy-MM-dd"));
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
             var result = response.Content.ReadAsStringAsync().Result;
             var availabilities = result.ToObject<Availabilities>();
@@ -86,7 +86,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
 
         public Booking Book(BookBody bookrequest)
         {
-            var uri = new Uri(string.Format("{0}/{1}/bookings", _host, VERSION));
+            var uri = string.Format("{0}/{1}/bookings", _host, VERSION);
             var bookRequestContent = new StringContent(bookrequest.ToJson(), Encoding.UTF8, "application/json");
             var response = _oauth.RequestAsync(HttpMethods.Post, uri, bookRequestContent).Result;
             var result = response.Content.ReadAsStringAsync().Result;
