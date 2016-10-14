@@ -1,5 +1,5 @@
 ﻿
-namespace TravelHubApi.Sdk.Common.V1.Helpers
+namespace TravelHubApi.Sdk.Common.Helpers
 {
     public class Settings
     {

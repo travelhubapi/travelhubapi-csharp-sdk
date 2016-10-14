@@ -1,5 +1,5 @@
 ﻿using System.Net;
-using TravelHubApi.Sdk.Common.V1.Helpers;
+using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel.Parameters.V1.Url;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Helpers

@@ -6,11 +6,11 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using TravelHubApi.Sdk.Common.V1.Helpers;
+using TravelHubApi.Sdk.Common.Helpers;
 
 namespace TravelHubApi.Sdk.OAuth
 {
-    public class OAuth
+    public class OAuthClient
     {
         public static string HOMOLOG_HOST
         {
@@ -28,24 +28,41 @@ namespace TravelHubApi.Sdk.OAuth
             }
         }
 
-        private string host { get; set; }
-        private const string authorizePath = "/oauth2";
-        private const string tokenPath = "/oauth2/token";
+        public static string AUTHORIZE_PATH { get { return "/oauth2"; } }
+        public static string TOKEN_PATH { get { return "/oauth2/token"; } }
+
+        public string host { get; set; }
+        public string authorizeUrl { get; set; }
+        public string tokenUrl { get; set; }
+
         private AuthorizerOptions authorizerOptions { get; set; }
         private OAuthHttpHandlerOptions options { get; set; }
         private OAuthHttpHandler oAuthHttpHandler { get; set; }
         private HttpClient client { get; set; }
 
-        public OAuth(Settings settings)
+        public OAuthClient(Settings settings)
         {
-            host = settings.Environment == Common.V1.Helpers.Environment.Production
+            Init(settings);
+        }
+            
+        public OAuthClient(Settings settings, HttpMessageHandler customHandler)
+        {
+            Init(settings, customHandler);
+        }
+
+        private void Init(Settings settings, HttpMessageHandler customHandler = null)
+        {
+            host = settings.Environment == Common.Helpers.Environment.Production
                 ? PRODUCTION_HOST
                 : HOMOLOG_HOST;
 
+            authorizeUrl = host + OAuthClient.AUTHORIZE_PATH;
+            tokenUrl = host + OAuthClient.TOKEN_PATH;
+
             authorizerOptions = new AuthorizerOptions
             {
-                AuthorizeEndpointUrl = new Uri(host + authorizePath),
-                TokenEndpointUrl = new Uri(host + tokenPath),
+                AuthorizeEndpointUrl = new Uri(tokenUrl),
+                TokenEndpointUrl = new Uri(tokenUrl),
                 ClientId = settings.ClientId,
                 ClientSecret = settings.ClientSecret,
                 GrantType = GrantType.ClientCredentials
@@ -53,14 +70,21 @@ namespace TravelHubApi.Sdk.OAuth
 
             options = new OAuthHttpHandlerOptions
             {
-                AuthorizerOptions = authorizerOptions
+                AuthorizerOptions = authorizerOptions,
+                InnerHandler = customHandler
             };
 
             oAuthHttpHandler = new OAuthHttpHandler(options);
-            client = new HttpClient(oAuthHttpHandler);
+
+            client = 
+                //customHandler != null ?
+                //HttpClientFactory.Create(customHandler, oAuthHttpHandler) :
+                new HttpClient(oAuthHttpHandler);
+
+
         }
 
-        public virtual Task<HttpResponseMessage> Request(HttpMethods method, Uri uri, HttpContent content = null)
+        public virtual Task<HttpResponseMessage> RequestAsync(HttpMethods method, Uri uri, HttpContent content = null)
         {
             Task<HttpResponseMessage> response;
 

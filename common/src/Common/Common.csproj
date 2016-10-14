@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="V1\ClientBase.cs" />
-    <Compile Include="V1\Extensions\ObjectExtensions.cs" />
-    <Compile Include="V1\Helpers\Environment.cs" />
-    <Compile Include="V1\Helpers\HttpMethods.cs" />
-    <Compile Include="V1\Helpers\Settings.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Helpers\Environment.cs" />
+    <Compile Include="Helpers\HttpMethods.cs" />
+    <Compile Include="Helpers\LoadFiles.cs" />
+    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

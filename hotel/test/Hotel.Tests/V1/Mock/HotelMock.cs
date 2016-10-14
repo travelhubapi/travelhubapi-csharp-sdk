@@ -8,31 +8,27 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
-using TravelHubApi.Sdk.Common.V1.Helpers;
-using TravelHubApi.Sdk.Common.V1.Extensions;
+using TravelHubApi.Sdk.Common.Helpers;
+using TravelHubApi.Sdk.Common.Extensions;
 using Newtonsoft.Json;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
 using System.Linq.Expressions;
 using TravelHubApi.Sdk.Hotel.V1.Models;
+using TravelHubApi.Sdk.OAuth;
 
 namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
 {
     public static class HotelMock
     {
-        private static string LoadJson(string path)
+        static string currentPath = Directory.GetCurrentDirectory();
+
+        #region Private methods
+        private static string GetPath(string path)
         {
-            string json = string.Empty;
-            var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            var jsonPath = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\", path);
-            using (StreamReader r = new StreamReader(jsonPath))
-            {
-                json = r.ReadToEnd();;
-            }
-            var obj = JsonConvert.DeserializeObject(json);
-            return obj.ToJson();
+            return Path.GetFullPath(Path.Combine(currentPath, "../../V1/Mock", path));
         }
 
-        private static OAuth.OAuth GetOAuth(Settings settings, HttpMethods method,
+        private static OAuthClient GetOAuth(Settings settings, HttpMethods method,
             string uri, string responseContent, HttpContent content,
             HttpStatusCode responseStatusCode = HttpStatusCode.OK,
             Func<HttpContent, bool> httpContentLambda = null
@@ -50,10 +46,10 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             {
                 expression = x => httpContentLambda(x);
             }
-            var oauthMock = new Mock<OAuth.OAuth>(settings);
+            var oauthMock = new Mock<OAuthClient>(settings);
 
             oauthMock
-                .Setup(foo => foo.Request(It.Is<HttpMethods>(
+                .Setup(foo => foo.RequestAsync(It.Is<HttpMethods>(
                     i => i.Equals(method)),
                     It.Is<Uri>(i => i.AbsoluteUri == uri),
                     It.Is<HttpContent>(expression)))
@@ -68,9 +64,10 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             return oauthMock.Object;
 
         }
+        #endregion
 
         #region GetAvailabilities
-        public static OAuth.OAuth GetOAuthToAvailabilitiesResponse(Settings settings)
+        public static OAuthClient GetOAuthToAvailabilitiesResponse(Settings settings)
         {
             return GetOAuth(settings,
                 HttpMethods.Get,
@@ -82,7 +79,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
 
         public static string GetAvailabilitiesJSONResponse()
         {
-            return LoadJson("V1/Mock/Json/ResponseAvailabilities.json");
+            return LoadFiles.LoadJsonString(GetPath("Json/ResponseAvailabilities.json"));
         }
 
         public static Availabilities GetAvailabilitiesResponse()
@@ -92,7 +89,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
         #endregion
 
         #region GetHotel
-        public static OAuth.OAuth GetOAuthToHotelResponse(Settings settings)
+        public static OAuthClient GetOAuthToHotelResponse(Settings settings)
         {
             return GetOAuth(settings,
                 HttpMethods.Get,
@@ -104,7 +101,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
 
         public static string GetHotelJSONResponse()
         {
-            return LoadJson("V1/Mock/Json/ResponseHotel.json");
+            return LoadFiles.LoadJsonString(GetPath("Json/ResponseHotel.json"));
         }
 
         public static TravelHubApi.Sdk.Hotel.V1.Models.Hotel GetHotelResponse()
@@ -114,7 +111,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
         #endregion
 
         #region GetFacilities
-        public static OAuth.OAuth GetOAuthToFacilitiesResponse(Settings settings)
+        public static OAuthClient GetOAuthToFacilitiesResponse(Settings settings)
         {
             return GetOAuth(settings,
                 HttpMethods.Get,
@@ -126,7 +123,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
 
         public static string GetFacilitiesJSONResponse()
         {
-            return LoadJson("V1/Mock/Json/ResponseFacilities.json");
+            return LoadFiles.LoadJsonString(GetPath("Json/ResponseFacilities.json"));
         }
 
         public static Facilities GetFacilitiesResponse()
@@ -136,7 +133,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
         #endregion
 
         #region GetImages
-        public static OAuth.OAuth GetOAuthToImagesResponse(Settings settings)
+        public static OAuthClient GetOAuthToImagesResponse(Settings settings)
         {
             return GetOAuth(settings,
                 HttpMethods.Get,
@@ -148,7 +145,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
 
         public static string GetImagesJSONResponse()
         {
-            return LoadJson("V1/Mock/Json/ResponseImages.json");
+            return LoadFiles.LoadJsonString(GetPath("Json/ResponseImages.json"));
         }
 
         public static Images GetImagesResponse()
@@ -157,8 +154,8 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
         }
         #endregion
 
-        #region GetBook
-        public static OAuth.OAuth GetOAuthToBookResponse(Settings settings)
+        #region Book
+        public static OAuthClient GetOAuthToBookResponse(Settings settings)
         {
             var bookRequest = GetBookJSONRequest();
             var bookRequestContent = new StringContent(bookRequest, Encoding.UTF8, "application/json");
@@ -191,12 +188,12 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
 
         public static string GetBookJSONResponse()
         {
-            return LoadJson("V1/Mock/Json/ResponseBooking.json");
+            return LoadFiles.LoadJsonString(GetPath("Json/ResponseBooking.json"));
         }
 
         public static string GetBookJSONRequest()
         {
-            return LoadJson("V1/Mock/Json/RequestBooking.json");
+            return LoadFiles.LoadJsonString(GetPath("Json/RequestBooking.json"));
         }
 
         public static Booking GetBookResponse()
@@ -209,7 +206,5 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             return GetBookJSONRequest().ToObject<BookBody>();
         }
         #endregion
-
-
     }
 }

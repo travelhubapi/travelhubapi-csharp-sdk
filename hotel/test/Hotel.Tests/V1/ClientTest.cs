@@ -10,14 +10,14 @@
 using System;
 using System.Collections.Generic;
 using Xunit;
-using TravelHubApi.Sdk.Common.V1.Helpers;
+using TravelHubApi.Sdk.Common.Helpers;
 using Moq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using TravelHubApi.Sdk.Hotel.V1;
 using System.Net;
 using TravelHubApi.Sdk.Hotel.Tests.V1.Mock;
-using TravelHubApi.Sdk.Common.V1.Extensions;
+using TravelHubApi.Sdk.Common.Extensions;
 using FluentAssertions;
 using System.Globalization;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
@@ -37,7 +37,7 @@ namespace TravelHub.Infra.Broker.Flytour.Aereo.Testes
         {
             settings = new Settings
             {
-                Environment = TravelHubApi.Sdk.Common.V1.Helpers.Environment.Homolog,
+                Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog,
                 ClientId = "ClientId",
                 ClientSecret = "ClientSecret"
             };

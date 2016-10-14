@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TravelHubApi.Sdk.Common.V1.Extensions
+namespace TravelHubApi.Sdk.Common.Extensions
 {
     public static class ObjectExtensions
     {
