@@ -7,22 +7,2686 @@
         "items": [
           {
             "broker": "970HDuvnBWQ",
-            "message": "8000.5332"
+            "message": "13862.2841"
           }
         ]
       },
       "hotels": {
-        "count": 3.0,
+        "count": 14,
         "items": [
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW52FEJgcButg1SH3zZXbQLcQ",
+            "code": "20001067358",
+            "name": "Pousada Caminho da Praia (Morro de São Paulo, Brasil)",
+            "stars": 2.5,
+            "category": "2.5  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Caminho da Praia, em Morro de São Paulo, deixa você perto do mar e a apenas alguns minutos de Praça Aureliano Lima e Igreja Nossa Senhora da Luz.  Esta pousada fica bem perto de Primeira Praia e Farol de Morro de São Paulo.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 15 quartos com ar-condicionado. O acesso de cortesia à internet sem fio mantém você conectado e há programas via satélite para sua diversão. Os banheiros apresentam chuveiros. As conveniências incluem cortinas blackout e a arrumação dos quartos é fornecida diariamente.</p><p><b>Comodidades</b> <br />Aprecie a vista em um jardim e desfrute de comodidades como acesso de cortesia à internet sem fio.</p><p><b>Alimentação</b> <br />Um café da manhã de cortesia é oferecido.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem serviço de lavanderia e lavagem a seco, equipe multilíngue e armazenamento para bagagem.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Rua da Praia 34",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.37785,
+              "longitude": -38.91569
+            },
+            "accommodations": {
+              "count": 3,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "quarto casal standard",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013491",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Internet grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 179.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 179.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 89.97,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 89.97,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 179.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 179.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "quarto triplo standard",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013492",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Internet grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 239.43,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 239.43,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 119.72,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 119.72,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 239.43,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 239.43,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "quarto quádruplo standard",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013493",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Internet grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 299.5,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 299.5,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 149.75,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 149.75,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 299.5,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 299.5,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW5yKcdahoOwDCrzHHn79TW_w",
+            "code": "20001077640",
+            "name": "Pousada Chic n' Choc (Morro de São Paulo, Brasil)",
+            "stars": 2.5,
+            "category": "2.5  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Chic n' Choc, em Morro de São Paulo, deixa você a apenas alguns minutos de Praia da Gamboa e perto de Igreja Nossa Senhora da Luz.  Esta pousada na praia fica bem perto de Píer de Morro de São Paulo e Praça Aureliano Lima.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 10 quartos com ar-condicionado, minibares e TVs LCD. Acesso de cortesia à internet sem fio está disponível para manter você conectado. Banheiro privativo possui produtos de toalete de cortesia e secadores de cabelo. As conveniências incluem cortinas blackout, a arrumação dos quartos é fornecida diariamente, e é possível solicitar ferros/tábuas de passar roupa.</p><p><b>Comodidades</b> <br />Aproveite as comodidades recreativas, como uma praia particular, ou aprecie a vista em um jardim. Esta pousada também oferece acesso à internet sem fio (sobretaxa), uma TV na área comum e assistência com excursões/ingressos.</p><p><b>Alimentação</b> <br />Esta pousada oferece um restaurante, que serve café da manhã e jantar, ou fique no quarto e aproveite nosso serviço de quarto (horário limitado). Mate sua sede com sua bebida favorita em um bar/lounge.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem serviço de lavanderia e lavagem a seco, equipe multilíngue e armazenamento para bagagem.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Rua do Toque",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.393,
+              "longitude": -38.9347
+            },
+            "accommodations": {
+              "count": 4,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "quarto standard",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013494",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Internet grátis, Café da manhã grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 106.57,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 106.57,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 53.28,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 53.28,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 106.57,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 106.57,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "quarto família",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013495",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Café da manhã grátis, Internet grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 152.24,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 152.24,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 76.12,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 76.12,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 152.24,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 152.24,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "quarto triplo superior",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013496",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Internet grátis, Café da manhã grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 199.81,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 199.81,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 99.9,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 99.9,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 199.81,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 199.81,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "quarto casal executivo, vista para o mar",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013497",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Internet grátis, Café da manhã grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 237.86,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 237.86,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 118.93,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 118.93,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 237.86,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 237.86,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW50vULSihMLez1pxpUhcOOeU",
+            "code": "20001128381",
+            "name": "Pousada Porto dos Milagres (Morro de São Paulo, Brasil)",
+            "stars": 3.0,
+            "category": "3  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Porto dos Milagres, em Morro de São Paulo, deixa você na praia e a apenas alguns minutos de Primeira Praia e Segunda Praia.  Esta pousada fica bem perto de Praça Aureliano Lima e Farol de Morro de São Paulo.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 13 quartos com minibares. Nos quartos, a TV digitais oferece diversão. Banheiros possuem chuveiros e secadores de cabelo. As conveniências incluem cofres e cortinas blackout, e a arrumação dos quartos é fornecida diariamente.</p><p><b>Comodidades</b> <br />Utilize comodidades convenientes, incluindo acesso de cortesia à internet sem fio e assistência com excursões/ingressos.</p><p><b>Alimentação</b> <br />Mate sua sede com sua bebida favorita em um bar na praia. Um café da manhã buffet de cortesia é servido diariamente.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem serviço de lavanderia e lavagem a seco, balcão de recepção 24 horas e armazenamento para bagagem.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Rua da Prainha S/N",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.37858,
+              "longitude": -38.91403
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "quarto casal, vista para o mar",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013498",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Café da manhã em estilo buffet, Internet grátis"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 355.21,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 355.21,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 177.6,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 177.6,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 355.21,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 355.21,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW57G2J2wDLFfIuRZn7sYA3Mg",
+            "code": "2000689344",
+            "name": "Pousada Timbalada (Morro de São Paulo, Brasil)",
+            "stars": 2.5,
+            "category": "2.5  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Timbalada, em Morro de São Paulo, deixa você perto da praia e a apenas alguns minutos de Segunda Praia e Ilha da Saudade. Esta pousada fica bem perto de Terceira praia e Primeira Praia.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 16 quartos com ar-condicionado e minibares. Acesso de cortesia à internet sem fio está disponível para manter você conectado. Banheiros possuem chuveiros e secadores de cabelo. A arrumação dos quartos é fornecida diariamente e pode-se solicitar ferros/tábuas de passar roupa.</p><p><b>Comodidades</b> <br />Utilize comodidades convenientes, incluindo acesso de cortesia à internet sem fio e assistência com excursões/ingressos. Os hóspedes podem pegar o traslado local (sobretaxa) para as atrações da área.</p><p><b>Alimentação</b> <br />Um café da manhã buffet de cortesia é servido diariamente.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />A recepção fica aberta em horário limitado. Traslado ida/volta do aeroporto está disponível por uma sobretaxa.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Vila Nova, 122",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.38098,
+              "longitude": -38.91122
+            },
+            "accommodations": {
+              "count": 3,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "apartamento triplo",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "1013499",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 46.35,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 46.35,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "apartamento duplo ou casal",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134910",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 46.35,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 46.35,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "apartamento quadruplo",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134911",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 46.35,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 46.35,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 92.71,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 11,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "Pousada Timbalada (Morro de São Paulo, Brasil)",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_33_b.jpg"
+                },
+                {
+                  "order": 2,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_19_b.jpg"
+                },
+                {
+                  "order": 3,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_18_b.jpg"
+                },
+                {
+                  "order": 4,
+                  "title": "Hotel Entrance",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_17_b.jpg"
+                },
+                {
+                  "order": 5,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_16_b.jpg"
+                },
+                {
+                  "order": 6,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_15_b.jpg"
+                },
+                {
+                  "order": 7,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_14_b.jpg"
+                },
+                {
+                  "order": 8,
+                  "title": "Terrace/Patio",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_13_b.jpg"
+                },
+                {
+                  "order": 9,
+                  "title": "Dining",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_12_b.jpg"
+                },
+                {
+                  "order": 10,
+                  "title": "Lobby",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_11_b.jpg"
+                },
+                {
+                  "order": 11,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/689344_11073426_10_b.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW5wp3ZysFgyNS13AXeHAhwFo",
+            "code": "2000186781",
+            "name": "Morro de São Paulo (Morro de São Paulo, Brasil)",
+            "stars": 3.0,
+            "category": "3  ESTRELAS",
+            "description": "O Hotel Morro de São Paulo está localizado a 300 m da Primeira Praia e a 500 m da Segunda. Fica a cerca de 1 km da Fortaleza do Tapirandu. Oferece internet Wi-Fi e piscina.\n\nAs acomodações são equipadas com ar-condicionado, TV e frigobar e banheiro privativo.\n\nO café da manhã serve pães, frutas, bebidas e comidas típicas da região.",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Rua da Biquinha, s/n",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.383138,
+              "longitude": -38.910937
+            },
+            "contacts": {
+              "phone": {
+                "countryCode": 16,
+                "cityCode": 72,
+                "number": 609563377
+              }
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "standard",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134912",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 198.61,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 198.61,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 99.31,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 99.31,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 198.61,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 198.61,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 2,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "Morro de São Paulo (Morro de São Paulo, Brasil)",
+                  "link": "https://i.t4w.mobi/hi/186781_eebdf8ed-ef71-444b-a495-8f5be3c6ec4f.jpg"
+                },
+                {
+                  "order": 2,
+                  "link": "https://i.t4w.mobi/hi/186781_eebdf8ed-ef71-444b-a495-8f5be3c6ec4f.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW55Bqb9ioac6sC-pJYdMyM6Q",
+            "code": "2000710730",
+            "name": "Pousada Perola Do Morro (Morro de São Paulo, Brasil)",
+            "stars": 2.5,
+            "category": "2.5  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Perola Do Morro fica na região central de Morro de São Paulo, a apenas alguns passos de Primeira Praia e Praça Aureliano Lima.  Esta pousada fica bem perto de Farol de Morro de São Paulo e Igreja Nossa Senhora da Luz.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 26 quartos com ar-condicionado e minibares. Banheiro privativo com chuveiros apresenta chuveiros com efeito de chuva e produtos de toalete de cortesia. As conveniências incluem cofres e cortinas blackout, e a arrumação dos quartos é fornecida diariamente.</p><p><b>Comodidades</b> <br />Aproveite as comodidades recreativas, como piscina externa, ou aprecie a vista em um jardim. Esta pousada oferece acesso de cortesia à internet sem fio, sala de jogos e uma TV na área comum.</p><p><b>Alimentação</b> <br />Esta pousada oferece serviço de quarto (horário limitado). Esta pousada tem uma piscina, onde você pode dar um mergulho refrescante, e depois peça sua bebida favorita no bar ao lado da piscina.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem balcão de recepção 24 horas, equipe multilíngue e armazenamento para bagagem.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Rua Caminho da Biquinha, 10",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.37777,
+              "longitude": -38.91529
+            },
+            "contacts": {
+              "phone": {
+                "countryCode": 55,
+                "cityCode": 75,
+                "number": 36521490
+              }
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "standard duplo",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134913",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 261.11,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 261.11,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 130.56,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 130.56,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 261.11,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 261.11,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 11,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "Pousada Perola Do Morro (Morro de São Paulo, Brasil)",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_7_b.jpg"
+                },
+                {
+                  "order": 2,
+                  "title": "Featured Image",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_7_b.jpg"
+                },
+                {
+                  "order": 3,
+                  "title": "Outdoor Pool",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_6_b.jpg"
+                },
+                {
+                  "order": 4,
+                  "title": "Terrace/Patio",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_5_b.jpg"
+                },
+                {
+                  "order": 5,
+                  "title": "Bathroom",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_4_b.jpg"
+                },
+                {
+                  "order": 6,
+                  "title": "Game Room",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_15_b.jpg"
+                },
+                {
+                  "order": 7,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_14_b.jpg"
+                },
+                {
+                  "order": 8,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_13_b.jpg"
+                },
+                {
+                  "order": 9,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_12_b.jpg"
+                },
+                {
+                  "order": 10,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_11_b.jpg"
+                },
+                {
+                  "order": 11,
+                  "title": "Dining",
+                  "link": "https://i.t4w.mobi/hi/710730_3980993_10_b.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW5zAIK8Z-4Z1wnYRlZgaPae8",
+            "code": "2000144611",
+            "name": "Pousada Safira Do Morro (Morro de São Paulo, Brasil)",
+            "stars": 3.0,
+            "category": "3  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Safira Do Morro fica bem na região central de Morro de São Paulo, a apenas alguns passos de Primeira Praia e a alguns minutos de Praça Aureliano Lima. Esta pousada fica bem perto de Farol de Morro de São Paulo e Igreja Nossa Senhora da Luz.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 18 quartos com ar-condicionado, minibares e TVs LCD. Banheiro privativo com chuveiros apresenta produtos de toalete de cortesia e secadores de cabelo. As conveniências incluem telefones, além de cofres e escrivaninha.</p><p><b>Comodidades</b> <br />Aproveite as instalações recreativas, como piscina externa e uma banheira de hidromassagem. Esta pousada oferece comodidades adicionais, como acesso de cortesia à internet sem fio e assistência com excursões/ingressos.</p><p><b>Alimentação</b> <br />Esta pousada oferece um restaurante, que serve refeições, mas você também pode ficar no quarto e aproveitar o serviço de quarto (horário limitado). Mate sua sede com sua bebida favorita em um bar/lounge.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem balcão de recepção 24 horas, equipe multilíngue e armazenamento para bagagem.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "Rua Caminho da Biquinha",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.37811,
+              "longitude": -38.91493
+            },
+            "contacts": {
+              "phone": {
+                "countryCode": 55,
+                "cityCode": 75,
+                "number": 36521683
+              }
+            },
+            "accommodations": {
+              "count": 2,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "standard superior",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134914",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 283.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 283.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 141.67,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 141.67,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 283.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 283.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "0",
+                  "name": "suite luxo",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134915",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Diarias com Café da Manhã"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 333.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 333.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 166.67,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 166.67,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 333.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 333.33,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 11,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "Pousada Safira Do Morro (Morro de São Paulo, Brasil)",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_11_b.jpg"
+                },
+                {
+                  "order": 2,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_19_b.jpg"
+                },
+                {
+                  "order": 3,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_18_b.jpg"
+                },
+                {
+                  "order": 4,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_17_b.jpg"
+                },
+                {
+                  "order": 5,
+                  "title": "Living Area",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_16_b.jpg"
+                },
+                {
+                  "order": 6,
+                  "title": "Breakfast Area",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_15_b.jpg"
+                },
+                {
+                  "order": 7,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_14_b.jpg"
+                },
+                {
+                  "order": 8,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_13_b.jpg"
+                },
+                {
+                  "order": 9,
+                  "title": "Garden",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_12_b.jpg"
+                },
+                {
+                  "order": 10,
+                  "title": "Featured Image",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_11_b.jpg"
+                },
+                {
+                  "order": 11,
+                  "title": "Bathroom",
+                  "link": "https://i.t4w.mobi/hi/144611_4018631_10_b.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzbYt6x_hzKW5wY03PV9_9njAH_1qVwEaY0",
+            "code": "2000541093",
+            "name": "Patachocas Beach Resort (Morro de São Paulo, Brasil)",
+            "stars": 4.0,
+            "category": "4  ESTRELAS",
+            "description": "<p><b>Localização do estabelecimento</b> <br />Patachocas Beach Resort, em Morro de São Paulo, deixa você na praia, a apenas alguns minutos de Quarta Praia e perto de Terceira praia.  Este resort 4 estrelas fica bem perto de Ilha da Saudade e Segunda Praia.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 60 quartos com ar-condicionado, geladeiras e minibares. Nos quartos, há programas a cabo e DVD players para sua diversão, enquanto o acesso de cortesia à internet sem fio mantém você conectado. Banheiros possuem chuveiros e secadores de cabelo. As conveniências incluem telefones, além de cofres e cortinas blackout.</p><p><b>Comodidades</b> <br />Desfrute de uma grande variedade de instalações recreativas, como piscina externa, uma quadra de tênis descoberta e aluguel de bicicletas. Este resort oferece comodidades como acesso de cortesia à internet sem fio, sala de jogos e loja de presentes/banca de jornal.</p><p><b>Alimentação</b> <br />Este resort oferece um restaurante de frente para a praia, que apresenta vista para a piscina. Você também pode ficar no quarto e aproveitar nosso serviço de quarto (horário limitado). Mate sua sede em um bar/lounge, um bar na praia ou um bar na água. Um café da manhã feito na hora de cortesia é servido diariamente.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem um computador, serviço de lavanderia e lavagem a seco e balcão de recepção 24 horas. Estacionamento grátis sem manobrista está disponível no local.</p>",
+            "broker": "970HDuvnBWQ",
+            "supplier": "k07RPcnV8cETtm19bosm6Q",
+            "address": {
+              "street": "4a Praia",
+              "city": {
+                "name": "Morro de São Paulo, Brasil",
+                "national": false,
+                "state": {},
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.38789,
+              "longitude": -38.90645
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "0",
+                  "name": "bangalô luxo com café da manhã",
+                  "room": {
+                    "code": "0",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 0,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10134916",
+                        "mealPlan": {
+                          "code": "0",
+                          "name": "Bed and Breakfast-Melhor preço disponível CAFE"
+                        },
+                        "rentalCost": {
+                          "base": {
+                            "amount": 448.96,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 448.96,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 224.48,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 224.48,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 448.96,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 448.96,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 11,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "Patachocas Beach Resort (Morro de São Paulo, Brasil)",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_27_b.jpg"
+                },
+                {
+                  "order": 2,
+                  "title": "Childrens Area",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_26_b.jpg"
+                },
+                {
+                  "order": 3,
+                  "title": "Tennis Court",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_25_b.jpg"
+                },
+                {
+                  "order": 4,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_24_b.jpg"
+                },
+                {
+                  "order": 5,
+                  "title": "Balcony",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_23_b.jpg"
+                },
+                {
+                  "order": 6,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_22_b.jpg"
+                },
+                {
+                  "order": 7,
+                  "title": "Bathroom",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_21_b.jpg"
+                },
+                {
+                  "order": 8,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_20_b.jpg"
+                },
+                {
+                  "order": 9,
+                  "title": "Guestroom",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_19_b.jpg"
+                },
+                {
+                  "order": 10,
+                  "title": "Restaurant",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_15_b.jpg"
+                },
+                {
+                  "order": 11,
+                  "title": "Exterior",
+                  "link": "https://i.t4w.mobi/hi/541093_4039876_14_b.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzYSxX30MW1f_kuOZgsxqUkY",
+            "code": "1000651",
+            "name": "PATACHOCAS ECO RESORT",
+            "stars": 4.0,
+            "category": "Primeira Superior",
+            "description": "Localizado a aproximadamente 10 km do porto de Morro de São Paulo/BA, o Hotel está localizado na quarta praia, com uma imensa faixa de areia branca e um mar azul, abrigado por uma barreira de corais. O Hotel possui restaurante, esportes náuticos, passeios ecológicos, à cavalo, às ilhas vizinhas, bar interno, playground para as crianças, casa de bonecas e de jogos, mesa de sinuca, pebolim, quadra de tênis, jogos para entretenimento como baralho, dominó, xadrez, dama, gamão, frescoball, toalhas para uso na piscina e praia, além de disponibilizarmos na área da praia cadeiras, sombreiros e serviço de bar. Os apartamentos são equipados com ar condicionado, espelho, secador, varanda, TV, telefone e frigobar.\r\n",
+            "broker": "970HDuvnBWQ",
+            "supplier": "970HDuvnBWQ",
+            "address": {
+              "street": "Praia QUARTA PRAIA,1 MORRO DE SAO PAULO ",
+              "zipCode": "45428000",
+              "city": {
+                "name": "Cairu",
+                "national": false,
+                "state": {
+                  "code": "BA",
+                  "name": "Bahia"
+                },
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.4908284,
+              "longitude": -39.0468827
+            },
+            "accommodations": {
+              "count": 2,
+              "items": [
+                {
+                  "code": "1190",
+                  "name": "Apartamento Luxo",
+                  "room": {
+                    "code": "1190",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 1,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10135217",
+                        "mealPlan": {
+                          "code": "753",
+                          "name": "Café da Manhã"
+                        },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 190.97,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 190.97,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 370.49,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 370.49,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
+                        "rentalCost": {
+                          "base": {
+                            "amount": 381.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 381.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 190.97,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 190.97,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 381.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 381.94,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "code": "1191",
+                  "name": "Bangalô Luxo",
+                  "room": {
+                    "code": "1191",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 1,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10135218",
+                        "mealPlan": {
+                          "code": "753",
+                          "name": "Café da Manhã"
+                        },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 224.31,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 224.31,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 435.16,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 435.16,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
+                        "rentalCost": {
+                          "base": {
+                            "amount": 448.62,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 448.62,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 224.31,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 224.31,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 448.62,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 448.62,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "facilities": {
+              "count": 2,
+              "items": [
+                {
+                  "title": "Facilidades do Hotel",
+                  "items": {
+                    "count": 13,
+                    "items": [
+                      {
+                        "code": "Piscina",
+                        "name": "Piscina"
+                      },
+                      {
+                        "code": "Praiaexclusiva",
+                        "name": "Praia exclusiva"
+                      },
+                      {
+                        "code": "Playground",
+                        "name": "Playground"
+                      },
+                      {
+                        "code": "Quadradetenis",
+                        "name": "Quadra de tênis"
+                      },
+                      {
+                        "code": "Praiaartificial",
+                        "name": "Praia artificial"
+                      },
+                      {
+                        "code": "Salaodejogos",
+                        "name": "Salão de jogos"
+                      },
+                      {
+                        "code": "Volei",
+                        "name": "Vôlei"
+                      },
+                      {
+                        "code": "Funcionariosbilingue",
+                        "name": "Funcionários bilíngüe"
+                      },
+                      {
+                        "code": "Internetwi-fisemcustoadicional",
+                        "name": "Internet wi-fi sem custo adicional"
+                      },
+                      {
+                        "code": "Servicosdepraia",
+                        "name": "Serviços de praia"
+                      },
+                      {
+                        "code": "Servicodelavanderia",
+                        "name": "Serviço de lavanderia"
+                      },
+                      {
+                        "code": "Loja",
+                        "name": "Loja"
+                      },
+                      {
+                        "code": "Traslado",
+                        "name": "Traslado"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Instalações do Apartamento",
+                  "items": {
+                    "count": 12,
+                    "items": [
+                      {
+                        "code": "Arcondicionado",
+                        "name": "Ar condicionado"
+                      },
+                      {
+                        "code": "Cortinascomblackout",
+                        "name": "Cortinas com black out"
+                      },
+                      {
+                        "code": "Frigobar",
+                        "name": "Frigobar"
+                      },
+                      {
+                        "code": "TVporassinatura",
+                        "name": "TV por assinatura"
+                      },
+                      {
+                        "code": "Varandacomrede",
+                        "name": "Varanda com rede"
+                      },
+                      {
+                        "code": "Camaskingsize",
+                        "name": "Camas king size"
+                      },
+                      {
+                        "code": "DVD",
+                        "name": "DVD"
+                      },
+                      {
+                        "code": "Secadordecabelo",
+                        "name": "Secador de cabelo"
+                      },
+                      {
+                        "code": "Telefone",
+                        "name": "Telefone"
+                      },
+                      {
+                        "code": "Cofreindividual",
+                        "name": "Cofre individual"
+                      },
+                      {
+                        "code": "Espelhocorpointeiro",
+                        "name": "Espelho corpo inteiro"
+                      },
+                      {
+                        "code": "TVLCD",
+                        "name": "TV LCD"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 13,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "",
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F820146553/1.jpg"
+                },
+                {
+                  "order": 2,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1554904992/1.jpg"
+                },
+                {
+                  "order": 3,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1757375801/2.jpg"
+                },
+                {
+                  "order": 4,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F810708404/3.jpg"
+                },
+                {
+                  "order": 5,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F590395889/4.jpg"
+                },
+                {
+                  "order": 6,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1009432221/5.jpg"
+                },
+                {
+                  "order": 7,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F635943952/6.jpg"
+                },
+                {
+                  "order": 8,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1757375801/7.jpg"
+                },
+                {
+                  "order": 9,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F662570538/8.jpg"
+                },
+                {
+                  "order": 10,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F974484093/9.jpg"
+                },
+                {
+                  "order": 11,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F178319502/10.jpg"
+                },
+                {
+                  "order": 12,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F82322197/11.jpg"
+                },
+                {
+                  "order": 13,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F513865493/12.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzYSxX30MW1f_sceSlO-lwCX2S74Zu9eG_M",
+            "code": "10003508",
+            "name": "POUSADA NATUREZA",
+            "stars": 3.0,
+            "category": "Turística",
+            "description": "A Pousada Natureza é uma charmosa pousada inserida no recanto mais arborizado e tranqüilo da sedutora Vila de Morro de São Paulo e encanta você com suas belezas naturais, arquitetura e decoração, atendimento individualizado e uma deslumbrante vista do mar e do pôr-do-sol. Ponha os pés para o alto e relaxe, você encontrou o seu lugar. Misturando as belezas naturais de seus 3.000 m² de área verde a uma arquitetura mediterrânea e colonial rústica, o Hotel Pousada Natureza Morro de São Paulo criou para você um ambiente de descontração e bem estar, envolvido por um estilo cheio de elegância.",
+            "broker": "970HDuvnBWQ",
+            "supplier": "970HDuvnBWQ",
+            "address": {
+              "street": "Praça AURELIANO O. LIMA,46 MORRO DE SÃO PAULO ",
+              "zipCode": "45428000",
+              "city": {
+                "name": "Cairu",
+                "national": false,
+                "state": {
+                  "code": "BA",
+                  "name": "Bahia"
+                },
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.4908284,
+              "longitude": -39.0468827
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "6816",
+                  "name": "APARTAMENTO COM VARANDA",
+                  "room": {
+                    "code": "6816",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 2,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10135219",
+                        "mealPlan": {
+                          "code": "3939",
+                          "name": "CAFÉ DA MANHÃ"
+                        },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 239.59,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 239.59,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 464.8,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 464.8,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
+                        "rentalCost": {
+                          "base": {
+                            "amount": 479.18,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 479.18,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 239.59,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 239.59,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 479.18,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 479.18,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 1,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "",
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F118182045/25 piscina (1).png"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzYSxX30MW1f_mFIO6tN3KFjPXxbl2MdWf8",
+            "code": "100012770",
+            "name": "KARAPITANGUI PRAIA HOTEL",
+            "stars": 4.0,
+            "category": "Turística Superior",
+            "description": "O Karapitangui Praia Hotel está localizado na Quarta Praia em Morro de São Paulo de frente para o mar e dispõe de bar, restaurante, parque aquático de 540m2, com divisória para adulto e criança, com hidromassagem na piscina, Dispõe de 26 acomodações entre suítes e bangalôs, com TV, ar-condicionado, frigobar, telefone, banheiro e varanda. brinquedoteca, ampla área verde, jacuzzi, rede de vôlei de praia, jogos para lazer, pizzaria forno a lenha, adega de vinho climatizada e wi-fi, além de uma sala de descanso bastante aconchegante e agradável. O hotel disponibiliza transporte gratuito hotel/villa (Receptivo 2°praia) / hotel durante todo o dia, das 09h00 as 23h00 sem custo ao hóspede.",
+            "broker": "970HDuvnBWQ",
+            "supplier": "970HDuvnBWQ",
+            "address": {
+              "street": "Rua Quarta Praia,0  ",
+              "zipCode": "45428000",
+              "city": {
+                "name": "Cairu",
+                "national": false,
+                "state": {
+                  "code": "BA",
+                  "name": "Bahia"
+                },
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.43283288,
+              "longitude": -38.90244178
+            },
+            "contacts": {
+              "phone": {
+                "countryCode": 55,
+                "cityCode": 75,
+                "number": 36522089
+              }
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "9671",
+                  "name": "Bangalô",
+                  "room": {
+                    "code": "9671",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 2,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10135220",
+                        "mealPlan": {
+                          "code": "5610",
+                          "name": "Cafe da Manhã"
+                        },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 173.61,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 173.61,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 336.81,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 336.81,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
+                        "rentalCost": {
+                          "base": {
+                            "amount": 347.22,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 347.22,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 173.61,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 173.61,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 347.22,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 347.22,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "facilities": {
+              "count": 2,
+              "items": [
+                {
+                  "title": "Facilidades do Hotel",
+                  "items": {
+                    "count": 7,
+                    "items": [
+                      {
+                        "code": "Restaurante",
+                        "name": "Restaurante"
+                      },
+                      {
+                        "code": "Lobby",
+                        "name": "Lobby"
+                      },
+                      {
+                        "code": "Traslados(entreoHoteleaVila)",
+                        "name": "Traslados (entre o Hotel e a Vila)"
+                      },
+                      {
+                        "code": "AreadeJogos",
+                        "name": "Área de Jogos"
+                      },
+                      {
+                        "code": "Jacuzzi",
+                        "name": "Jacuzzi "
+                      },
+                      {
+                        "code": "Piscina",
+                        "name": "Piscina"
+                      },
+                      {
+                        "code": "BarMolhado",
+                        "name": "Bar Molhado"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Instalações do Apartamento",
+                  "items": {
+                    "count": 3,
+                    "items": [
+                      {
+                        "code": "ApartamentoStandard",
+                        "name": "Apartamento Standard",
+                        "description": "Apartamentos equipados com TV, minibar, ar-condicionado, cofre, sistema de aquecimento central de água."
+                      },
+                      {
+                        "code": "SuiteLuxo",
+                        "name": "Suíte Luxo",
+                        "description": "Apartamentos equipados com TV, minibar, ar-condicionado, cofre, sistema de aquecimento central de água, varanda e mezanino."
+                      },
+                      {
+                        "code": "Bangalo",
+                        "name": "Bangalô",
+                        "description": "Bangalos equipados com TV, minibar, ar-condicionado, cofre, sistema de aquecimento central de água."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 13,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "",
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F601197694/AEREA.jpg"
+                },
+                {
+                  "order": 2,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F824335475/piscina-2.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 3,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-881902018/piscina-5.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 4,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F269948516/morro-de-sao-paulo.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 5,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F84850881/piscina.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 6,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1253720668/restaurante.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 7,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F883775655/varanda.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 8,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-916754294/caf-a-da-manha.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 9,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-400612597/5-stand.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 10,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F125830096/7-suite-luxo.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 11,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-2118415637/hotel-karapitangui.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 12,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1053536867/frente-hotel.jpg.1024x0.jpg"
+                },
+                {
+                  "order": 13,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1723009255/-mg-9814.jpg.1024x0.jpg"
+                }
+              ]
+            }
+          },
+          {
+            "track": "Vo7GMa_6VzYSxX30MW1f_nhWdpRMy5td",
+            "code": "1000487",
+            "name": "VILLA DAS PEDRAS POUSADA",
+            "stars": 3.0,
+            "category": "Turística",
+            "description": "A Pousada Villa das Pedras está localizada em frente ao mar na 2ª praia em Morro de São Paulo. Cercada por jardins e muito verde em um dos melhores pontos da ilha. A Villa das Pedras está perto de tudo o que o Morro oferece e ao mesmo tempo é um pequeno paraíso isolado em tranqüilidade e conforto. São 24 suítes com acomodações para 2, 3 ou 4 pessoas. Todas as unidades são espaçosas e confortáveis e equipadas com ar condicionado, frigobar, TV a cores, TV à cabo SKY com 12 canais, telefone e varandas independentes com redes para você relaxar com privacidade. As diárias incluem um farto café da manhã servido em estilo buffet self service em uma área com vista para a piscina e o mar.",
+            "broker": "970HDuvnBWQ",
+            "supplier": "970HDuvnBWQ",
+            "address": {
+              "street": "Praia Segunda Praia s/n , Segunda Praia ",
+              "zipCode": "45428000",
+              "city": {
+                "name": "Cairu",
+                "national": false,
+                "state": {
+                  "code": "BA",
+                  "name": "Bahia"
+                },
+                "country": {
+                  "prefixCode": "BR",
+                  "name": "Brasil"
+                }
+              },
+              "latitude": -13.4908284,
+              "longitude": -39.0468827
+            },
+            "accommodations": {
+              "count": 1,
+              "items": [
+                {
+                  "code": "666",
+                  "name": "Vista Jardim Térreo Standard",
+                  "room": {
+                    "code": "666",
+                    "type": "Empty",
+                    "bed": "Irrelevant"
+                  },
+                  "availableRooms": 2,
+                  "fares": {
+                    "count": 1,
+                    "items": [
+                      {
+                        "rateCode": "10135221",
+                        "mealPlan": {
+                          "code": "1299",
+                          "name": "Café da Manhã"
+                        },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 267.36,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 267.36,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 518.68,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 518.68,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
+                        "rentalCost": {
+                          "base": {
+                            "amount": 534.72,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 534.72,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "averageDaily": {
+                          "base": {
+                            "amount": 267.36,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 267.36,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        },
+                        "total": {
+                          "base": {
+                            "amount": 534.72,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          },
+                          "equivalent": {
+                            "amount": 534.72,
+                            "currencyCode": {
+                              "iso": "BRL"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "facilities": {
+              "count": 2,
+              "items": [
+                {
+                  "title": "Facilidades do Hotel",
+                  "items": {
+                    "count": 12,
+                    "items": [
+                      {
+                        "code": "Passeioecologico",
+                        "name": "Passeio ecológico"
+                      },
+                      {
+                        "code": "Piscina",
+                        "name": "Piscina"
+                      },
+                      {
+                        "code": "Barcos",
+                        "name": "Barcos"
+                      },
+                      {
+                        "code": "Bicicletas",
+                        "name": "Bicicletas"
+                      },
+                      {
+                        "code": "Lancha",
+                        "name": "Lancha"
+                      },
+                      {
+                        "code": "Massagista",
+                        "name": "Massagista"
+                      },
+                      {
+                        "code": "Windsurfing",
+                        "name": "Windsurfing"
+                      },
+                      {
+                        "code": "Caiaque",
+                        "name": "Caiaque"
+                      },
+                      {
+                        "code": "Pesca",
+                        "name": "Pesca"
+                      },
+                      {
+                        "code": "Cavalos",
+                        "name": "Cavalos"
+                      },
+                      {
+                        "code": "Mergulho",
+                        "name": "Mergulho"
+                      },
+                      {
+                        "code": "Tiroleza",
+                        "name": "Tiroleza"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Instalações do Apartamento",
+                  "items": {
+                    "count": 4,
+                    "items": [
+                      {
+                        "code": "Arcondicionado",
+                        "name": "Ar condicionado"
+                      },
+                      {
+                        "code": "Varandacomrede",
+                        "name": "Varanda com rede"
+                      },
+                      {
+                        "code": "Frigobar",
+                        "name": "Frigobar"
+                      },
+                      {
+                        "code": "TVporassinatura",
+                        "name": "TV por assinatura"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "images": {
+              "count": 8,
+              "items": [
+                {
+                  "order": 1,
+                  "title": "",
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1165454706/pedra.JPG"
+                },
+                {
+                  "order": 2,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1628547730/1.jpg"
+                },
+                {
+                  "order": 3,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F972915514/2.jpg"
+                },
+                {
+                  "order": 4,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F37891917/4.jpg"
+                },
+                {
+                  "order": 5,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F31155140/6.jpg"
+                },
+                {
+                  "order": 6,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1331374820/7.jpg"
+                },
+                {
+                  "order": 7,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F23387876/9.jpg"
+                },
+                {
+                  "order": 8,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F908267434/10.jpg"
+                }
+              ]
+            }
+          },
           {
             "track": "Vo7GMa_6VzYSxX30MW1f_rWgegNFvAJvBHFGzLdIr4U",
             "code": "100013895",
             "name": "CHARME POUSADA BOUTIQUE E SPA",
-            "stars": 3,
+            "stars": 3.0,
             "category": "Turística",
             "description": "Cercada por jardins naturais, a Charme Pousada está localizada no centro de Morro de São Paulo, a apenas 100 metros das praias.\r\nA propriedade oferece quartos, suítes e bangalõs confortáveis, alguns com banheira de hidromassagem privativa e varanda com vista para o mar.\r\nA Charme Pousada serve um buffet de café-da-manhã diário, com frutas frescas, sucos naturais e bolos.\r\nA Charme Pousada dispõe de um quiosque de massagem e uma piscina ao ar livre com vista para as praias, além de banheira de hidromassagem e sala de TV.",
             "broker": "970HDuvnBWQ",
-            "provider": "970HDuvnBWQ",
+            "supplier": "970HDuvnBWQ",
             "address": {
               "street": "Rua DA PRAINHA,1 MORRO DE SÃO PAULO ",
               "zipCode": "45428000",
@@ -38,8 +2702,8 @@
                   "name": "Brasil"
                 }
               },
-              "latitude": -13388779,
-              "longitude": -389174543
+              "latitude": -13.388779,
+              "longitude": -38.9174543
             },
             "accommodations": {
               "count": 2,
@@ -57,7 +2721,7 @@
                     "count": 1,
                     "items": [
                       {
-                        "rateCode": "1143591",
+                        "rateCode": "10135222",
                         "mealPlan": {
                           "code": "6480",
                           "name": "CAFÉ DA MANHÃ"
@@ -66,16 +2730,16 @@
                           "count": 1,
                           "items": [
                             {
-                              "applicationDate": "2016-10-14T00:00:00",
+                              "applicationDate": "2016-10-19T00:00:00",
                               "daily": {
                                 "base": {
-                                  "amount": 222.66,
+                                  "amount": 197.92,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
                                 },
                                 "equivalent": {
-                                  "amount": 222.66,
+                                  "amount": 197.92,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
@@ -90,17 +2754,17 @@
                             "items": [
                               {
                                 "period": {
-                                  "begin": "2016-10-07T00:00:00",
-                                  "end": "2016-10-14T00:00:00"
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
                                 },
                                 "baseFine": {
-                                  "amount": 396.33,
+                                  "amount": 383.96,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
                                 },
                                 "equivalentFine": {
-                                  "amount": 396.33,
+                                  "amount": 383.96,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
@@ -112,13 +2776,13 @@
                         "remarks": "",
                         "rentalCost": {
                           "base": {
-                            "amount": 445.32,
+                            "amount": 395.84,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 445.32,
+                            "amount": 395.84,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -126,13 +2790,13 @@
                         },
                         "averageDaily": {
                           "base": {
-                            "amount": 222.66,
+                            "amount": 197.92,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 222.66,
+                            "amount": 197.92,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -140,13 +2804,13 @@
                         },
                         "total": {
                           "base": {
-                            "amount": 445.32,
+                            "amount": 395.84,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 445.32,
+                            "amount": 395.84,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -169,7 +2833,7 @@
                     "count": 1,
                     "items": [
                       {
-                        "rateCode": "114402",
+                        "rateCode": "10135223",
                         "mealPlan": {
                           "code": "6480",
                           "name": "CAFÉ DA MANHÃ"
@@ -178,16 +2842,16 @@
                           "count": 1,
                           "items": [
                             {
-                              "applicationDate": "2016-10-14T00:00:00",
+                              "applicationDate": "2016-10-19T00:00:00",
                               "daily": {
                                 "base": {
-                                  "amount": 237.5,
+                                  "amount": 211.11,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
                                 },
                                 "equivalent": {
-                                  "amount": 237.5,
+                                  "amount": 211.11,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
@@ -202,17 +2866,17 @@
                             "items": [
                               {
                                 "period": {
-                                  "begin": "2016-10-07T00:00:00",
-                                  "end": "2016-10-14T00:00:00"
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
                                 },
                                 "baseFine": {
-                                  "amount": 422.75,
+                                  "amount": 409.56,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
                                 },
                                 "equivalentFine": {
-                                  "amount": 422.75,
+                                  "amount": 409.56,
                                   "currencyCode": {
                                     "iso": "BRL"
                                   }
@@ -224,13 +2888,13 @@
                         "remarks": "",
                         "rentalCost": {
                           "base": {
-                            "amount": 475,
+                            "amount": 422.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 475,
+                            "amount": 422.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -238,13 +2902,13 @@
                         },
                         "averageDaily": {
                           "base": {
-                            "amount": 237.5,
+                            "amount": 211.11,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 237.5,
+                            "amount": 211.11,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -252,13 +2916,13 @@
                         },
                         "total": {
                           "base": {
-                            "amount": 475,
+                            "amount": 422.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 475,
+                            "amount": 422.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -345,58 +3009,110 @@
             }
           },
           {
-            "track": "Vo7GMa_6VzbYt6x_hzKW5yKcdahoOwDCrzHHn79TW_w",
-            "code": "20001077640",
-            "name": "Pousada Chic n' Choc (Morro de São Paulo, Brasil)",
-            "stars": 2.5,
-            "category": "2.5  ESTRELAS",
-            "description": "<p><b>Localização do estabelecimento</b> <br />Pousada Chic n' Choc, em Morro de São Paulo, deixa você a apenas alguns minutos de Praia da Gamboa e perto de Igreja Nossa Senhora da Luz.  Esta pousada na praia fica bem perto de Píer de Morro de São Paulo e Praça Aureliano Lima.</p><p><b>Quartos</b> <br />Sinta-se em casa em um de nossos 10 quartos com ar-condicionado, minibares e TVs LCD. Acesso de cortesia à internet sem fio está disponível para manter você conectado. Banheiro privativo possui produtos de toalete de cortesia e secadores de cabelo. As conveniências incluem cortinas blackout, a arrumação dos quartos é fornecida diariamente, e é possível solicitar ferros/tábuas de passar roupa.</p><p><b>Comodidades</b> <br />Aproveite as comodidades recreativas, como uma praia particular, ou aprecie a vista em um jardim. Esta pousada também oferece acesso à internet sem fio (sobretaxa), uma TV na área comum e assistência com excursões/ingressos.</p><p><b>Alimentação</b> <br />Esta pousada oferece um restaurante, que serve café da manhã e jantar, ou fique no quarto e aproveite nosso serviço de quarto (horário limitado). Mate sua sede com sua bebida favorita em um bar/lounge.</p><p><b>Comodidades para negócios e outras comodidades</b> <br />As comodidades presentes incluem serviço de lavanderia e lavagem a seco, equipe multilíngue e armazenamento para bagagem.</p>",
+            "track": "Vo7GMa_6VzYSxX30MW1f_kSUnwtKAvftx8fkJa5usCs",
+            "code": "10003568",
+            "name": "POUSADA MAREIA",
+            "stars": 3.0,
+            "category": "Turística",
+            "description": "A Pousada Mareia é simpática e acolhedora, possui excelente localização para quem quer estar perto de tudo: tanto da vila, rua principal, point dos melhores restaurantes e lojas locais, quanto da praia, já que estamos à apenas 150 mts da primeira praia, considerada uma das mais charmosas da ilha.",
             "broker": "970HDuvnBWQ",
-            "provider": "k07RPcnV8cETtm19bosm6Q",
+            "supplier": "970HDuvnBWQ",
             "address": {
-              "street": "Rua do Toque",
+              "street": "Rua CAMINHO DA PRAIA,78 MORRO DE SÃO PAULO ",
+              "zipCode": "45428000",
               "city": {
-                "name": "Morro de São Paulo, Brasil",
+                "name": "Cairu",
                 "national": false,
-                "state": {},
+                "state": {
+                  "code": "BA",
+                  "name": "Bahia"
+                },
                 "country": {
                   "prefixCode": "BR",
                   "name": "Brasil"
                 }
               },
-              "latitude": -13393,
-              "longitude": -389347
+              "latitude": -13.4750327,
+              "longitude": -38.9156548
             },
             "accommodations": {
               "count": 2,
               "items": [
                 {
-                  "code": "0",
-                  "name": "quarto família",
+                  "code": "6884",
+                  "name": "Standard",
                   "room": {
-                    "code": "0",
+                    "code": "6884",
                     "type": "Empty",
                     "bed": "Irrelevant"
                   },
-                  "availableRooms": 0,
+                  "availableRooms": 1,
                   "fares": {
                     "count": 1,
                     "items": [
                       {
-                        "rateCode": "114433",
+                        "rateCode": "10135224",
                         "mealPlan": {
-                          "code": "0",
-                          "name": "Café da manhã grátis, Internet grátis"
+                          "code": "3975",
+                          "name": "Café da Manhã"
                         },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 138.89,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 138.89,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 269.45,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 269.45,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
                         "rentalCost": {
                           "base": {
-                            "amount": 152.24,
+                            "amount": 277.78,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 152.24,
+                            "amount": 277.78,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -404,13 +3120,13 @@
                         },
                         "averageDaily": {
                           "base": {
-                            "amount": 76.12,
+                            "amount": 138.89,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 76.12,
+                            "amount": 138.89,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -418,13 +3134,13 @@
                         },
                         "total": {
                           "base": {
-                            "amount": 152.24,
+                            "amount": 277.78,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 152.24,
+                            "amount": 277.78,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -435,32 +3151,80 @@
                   }
                 },
                 {
-                  "code": "0",
-                  "name": "quarto casal executivo, vista para o mar",
+                  "code": "6885",
+                  "name": "Standard Superior",
                   "room": {
-                    "code": "0",
+                    "code": "6885",
                     "type": "Empty",
                     "bed": "Irrelevant"
                   },
-                  "availableRooms": 0,
+                  "availableRooms": 1,
                   "fares": {
                     "count": 1,
                     "items": [
                       {
-                        "rateCode": "114434",
+                        "rateCode": "10135225",
                         "mealPlan": {
-                          "code": "0",
-                          "name": "Internet grátis, Café da manhã grátis"
+                          "code": "3975",
+                          "name": "Café da Manhã"
                         },
+                        "details": {
+                          "count": 1,
+                          "items": [
+                            {
+                              "applicationDate": "2016-10-19T00:00:00",
+                              "daily": {
+                                "base": {
+                                  "amount": 173.61,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalent": {
+                                  "amount": 173.61,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "cancellationFines": {
+                          "cancellationFines": {
+                            "count": 1,
+                            "items": [
+                              {
+                                "period": {
+                                  "begin": "2016-10-12T00:00:00",
+                                  "end": "2016-10-19T00:00:00"
+                                },
+                                "baseFine": {
+                                  "amount": 336.81,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                },
+                                "equivalentFine": {
+                                  "amount": 336.81,
+                                  "currencyCode": {
+                                    "iso": "BRL"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        "remarks": "",
                         "rentalCost": {
                           "base": {
-                            "amount": 237.86,
+                            "amount": 347.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 237.86,
+                            "amount": 347.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -468,13 +3232,13 @@
                         },
                         "averageDaily": {
                           "base": {
-                            "amount": 118.93,
+                            "amount": 173.61,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 118.93,
+                            "amount": 173.61,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -482,13 +3246,13 @@
                         },
                         "total": {
                           "base": {
-                            "amount": 237.86,
+                            "amount": 347.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
                           },
                           "equivalent": {
-                            "amount": 237.86,
+                            "amount": 347.22,
                             "currencyCode": {
                               "iso": "BRL"
                             }
@@ -499,118 +3263,77 @@
                   }
                 }
               ]
-            }
-          },
-          {
-            "track": "Vo7GMa_6VzbYt6x_hzKW5wp3ZysFgyNS13AXeHAhwFo",
-            "code": "2000186781",
-            "name": "Morro de São Paulo (Morro de São Paulo, Brasil)",
-            "stars": 3,
-            "category": "3  ESTRELAS",
-            "description": "O Hotel Morro de São Paulo está localizado a 300 m da Primeira Praia e a 500 m da Segunda. Fica a cerca de 1 km da Fortaleza do Tapirandu. Oferece internet Wi-Fi e piscina.\n\nAs acomodações são equipadas com ar-condicionado, TV e frigobar e banheiro privativo.\n\nO café da manhã serve pães, frutas, bebidas e comidas típicas da região.",
-            "broker": "970HDuvnBWQ",
-            "provider": "k07RPcnV8cETtm19bosm6Q",
-            "address": {
-              "street": "Rua da Biquinha, s/n",
-              "city": {
-                "name": "Morro de São Paulo, Brasil",
-                "national": false,
-                "state": {},
-                "country": {
-                  "prefixCode": "BR",
-                  "name": "Brasil"
-                }
-              },
-              "latitude": -13383138,
-              "longitude": -38910937
             },
-            "contacts": {
-              "phone": {
-                "countryCode": 16,
-                "cityCode": 72,
-                "number": 609563377
-              }
-            },
-            "accommodations": {
-              "count": 1,
+            "facilities": {
+              "count": 2,
               "items": [
                 {
-                  "code": "0",
-                  "name": "standard",
-                  "room": {
-                    "code": "0",
-                    "type": "Empty",
-                    "bed": "Irrelevant"
-                  },
-                  "availableRooms": 0,
-                  "fares": {
-                    "count": 1,
-                    "items": [
-                      {
-                        "rateCode": "114435",
-                        "mealPlan": {
-                          "code": "0",
-                          "name": "Diarias com Café da Manhã"
-                        },
-                        "rentalCost": {
-                          "base": {
-                            "amount": 198.61,
-                            "currencyCode": {
-                              "iso": "BRL"
-                            }
-                          },
-                          "equivalent": {
-                            "amount": 198.61,
-                            "currencyCode": {
-                              "iso": "BRL"
-                            }
-                          }
-                        },
-                        "averageDaily": {
-                          "base": {
-                            "amount": 99.31,
-                            "currencyCode": {
-                              "iso": "BRL"
-                            }
-                          },
-                          "equivalent": {
-                            "amount": 99.31,
-                            "currencyCode": {
-                              "iso": "BRL"
-                            }
-                          }
-                        },
-                        "total": {
-                          "base": {
-                            "amount": 198.61,
-                            "currencyCode": {
-                              "iso": "BRL"
-                            }
-                          },
-                          "equivalent": {
-                            "amount": 198.61,
-                            "currencyCode": {
-                              "iso": "BRL"
-                            }
-                          }
-                        }
-                      }
-                    ]
+                  "title": "Facilidades do Hotel",
+                  "items": {
+                    "count": 0,
+                    "items": []
+                  }
+                },
+                {
+                  "title": "Instalações do Apartamento",
+                  "items": {
+                    "count": 0,
+                    "items": []
                   }
                 }
               ]
             },
             "images": {
-              "count": 2,
+              "count": 12,
               "items": [
                 {
                   "order": 1,
-                  "title": "Morro de São Paulo (Morro de São Paulo, Brasil)",
-                  "link": "https://i.t4w.mobi/hi/186781_eebdf8ed-ef71-444b-a495-8f5be3c6ec4f.jpg"
+                  "title": "",
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-2013059983/DSC_1429.JPG"
                 },
                 {
                   "order": 2,
-                  "link": "https://i.t4w.mobi/hi/186781_eebdf8ed-ef71-444b-a495-8f5be3c6ec4f.jpg"
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F1039669257/DSC_1406.JPG"
+                },
+                {
+                  "order": 3,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F695332266/DSC_1408.JPG"
+                },
+                {
+                  "order": 4,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F80166712/DSC_1416.JPG"
+                },
+                {
+                  "order": 5,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1698388980/DSC_1417.JPG"
+                },
+                {
+                  "order": 6,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-594933938/DSC_1421.JPG"
+                },
+                {
+                  "order": 7,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1814596046/DSC_1427.JPG"
+                },
+                {
+                  "order": 8,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1288525787/DSC_1429.JPG"
+                },
+                {
+                  "order": 9,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F34312361/DSC_1433.JPG"
+                },
+                {
+                  "order": 10,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1881112583/DSC_1439.JPG"
+                },
+                {
+                  "order": 11,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F-1671886934/DSC_2866.JPG"
+                },
+                {
+                  "order": 12,
+                  "link": "https://backoffice.flytour.com.br/pls/flytour/arquivos/F2052272994/DSC_2913.JPG"
                 }
               ]
             }

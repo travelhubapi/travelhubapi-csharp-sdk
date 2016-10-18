@@ -15,10 +15,10 @@ namespace Sdk.OAuth.Tests.Mock
 {
     public class OAuthClientMockFixture : IDisposable
     {
-        string currentPath;
         public dynamic token;
-        string tokenStr;
         public dynamic refreshedToken;
+        string currentPath;
+        string tokenStr;
         string refreshedTokenStr;
 
         public OAuthClientMockFixture() { 
@@ -36,10 +36,10 @@ namespace Sdk.OAuth.Tests.Mock
             var mockHttp = new MockHttpMessageHandler();
 
             CreateTokenMock(mockHttp);
-            CreateResponseOK(URLs.REPONSE_OK, mockHttp);
-            CreateResponseUnathorized(URLs.REPONSE_UNATHORIZED_FIRST_TIME, mockHttp);
+            CreateResponseOKMock(URLs.REPONSE_OK, mockHttp);
+            CreateResponseUnathorizedMock(URLs.REPONSE_UNATHORIZED_FIRST_TIME, mockHttp);
             CreateRefreshTokenMock(mockHttp);
-            CreateResponseOKWithRefreshedToken(URLs.REPONSE_UNATHORIZED_FIRST_TIME, mockHttp);
+            CreateResponseOKWithRefreshedTokenMock(URLs.REPONSE_UNATHORIZED_FIRST_TIME, mockHttp);
 
             return mockHttp;
         }
@@ -75,7 +75,7 @@ namespace Sdk.OAuth.Tests.Mock
             return mockHttp;
         }
 
-        private MockHttpMessageHandler CreateResponseUnathorized(
+        private MockHttpMessageHandler CreateResponseUnathorizedMock(
             string url,
             MockHttpMessageHandler mockHttp, int times = 1)
         {
@@ -89,7 +89,7 @@ namespace Sdk.OAuth.Tests.Mock
             return mockHttp;
         }
 
-        private MockHttpMessageHandler CreateResponseOK(
+        private MockHttpMessageHandler CreateResponseOKMock(
             string url,
             MockHttpMessageHandler mockHttp, int times = 1)
         {
@@ -102,7 +102,7 @@ namespace Sdk.OAuth.Tests.Mock
             return mockHttp;
         }
 
-        private MockHttpMessageHandler CreateResponseOKWithRefreshedToken(
+        private MockHttpMessageHandler CreateResponseOKWithRefreshedTokenMock(
             string url,
             MockHttpMessageHandler mockHttp, int times = 1)
         {
@@ -117,7 +117,7 @@ namespace Sdk.OAuth.Tests.Mock
 
         private string GetPath(string path)
         {
-            return Path.GetFullPath(Path.Combine(currentPath, "../../Mock", path));
+            return Path.GetFullPath(Path.Combine(currentPath, "Mock", path));
         }
         #endregion
     }

@@ -34,19 +34,25 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         [JsonProperty(Order = 7)]
         public virtual string Broker { get; set; }
 
+        /// <summary>
+        /// Gets or sets the supplier of hotel information.
+        /// </summary>
         [JsonProperty(Order = 8)]
-        public virtual Address Address { get; set; }
+        public virtual string Supplier { get; set; }
 
         [JsonProperty(Order = 9)]
-        public virtual Contacts Contacts { get; set; }
+        public virtual Address Address { get; set; }
 
         [JsonProperty(Order = 10)]
-        public virtual Accommodations Accommodations { get; set; }
+        public virtual Contacts Contacts { get; set; }
 
         [JsonProperty(Order = 11)]
-        public virtual Facilities Facilities { get; set; }
+        public virtual Accommodations Accommodations { get; set; }
 
         [JsonProperty(Order = 12)]
+        public virtual Facilities Facilities { get; set; }
+
+        [JsonProperty(Order = 13)]
         public virtual Images Images { get; set; }
         #endregion
     }

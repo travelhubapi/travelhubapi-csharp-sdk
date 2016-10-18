@@ -128,8 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Mock\Json\ResponseRefreshToken.json" />
-    <None Include="Mock\Json\ResponseToken.json" />
+    <None Include="Mock\Json\ResponseRefreshToken.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Mock\Json\ResponseToken.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

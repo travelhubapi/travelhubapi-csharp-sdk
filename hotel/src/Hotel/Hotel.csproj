@@ -68,9 +68,11 @@
     <Compile Include="V1\Models\CurrencyCode.cs" />
     <Compile Include="V1\Models\Document.cs" />
     <Compile Include="V1\Models\Enums\Bed.cs" />
+    <Compile Include="V1\Models\Enums\BookingAvailability.cs" />
     <Compile Include="V1\Models\Enums\CreditCardBrand.cs" />
     <Compile Include="V1\Models\Enums\CreditCardOrigin.cs" />
     <Compile Include="V1\Models\Enums\CreditCardOwnership.cs" />
+    <Compile Include="V1\Models\Enums\CurrencyIso.cs" />
     <Compile Include="V1\Models\Enums\DocumentType.cs" />
     <Compile Include="V1\Models\Enums\Gender.cs" />
     <Compile Include="V1\Models\Enums\GuestType.cs" />
@@ -100,7 +102,8 @@
     <Compile Include="V1\Models\MonetaryValue.cs" />
     <Compile Include="V1\Models\Parameters\Body\BookBody.cs" />
     <Compile Include="V1\Models\Parameters\Body\CancellationPoliceBody.cs" />
-    <Compile Include="V1\Models\Parameters\Url\AvailabilitiesUrlParams.cs" />
+    <Compile Include="V1\Models\Parameters\RoomParameter.cs" />
+    <Compile Include="V1\Models\Parameters\Url\AvailabilitiesParams.cs" />
     <Compile Include="V1\Models\Parameters\Url\CancellationPoliceUrlParams.cs" />
     <Compile Include="V1\Models\Parameters\Url\FacilityUrlParams.cs" />
     <Compile Include="V1\Models\Parameters\Url\HighlightUrlParams.cs" />
@@ -126,6 +129,10 @@
     <ProjectReference Include="..\..\..\common\src\Common\Common.csproj">
       <Project>{19d34303-1692-427e-a414-339bfc44aa25}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libs\csharp-qs\src\QueryString\QueryString.csproj">
+      <Project>{cf9bf902-22d3-4712-8222-64e2eb863cd9}</Project>
+      <Name>QueryString</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\oauth\src\OAuth\OAuth.csproj">
       <Project>{57a1ba12-eb63-4c26-9e50-6f39caae643e}</Project>

@@ -60,12 +60,24 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="V1\Mock\Json\RequestBooking.json" />
-    <None Include="V1\Mock\Json\ResponseAvailabilities.json" />
-    <None Include="V1\Mock\Json\ResponseBooking.json" />
-    <None Include="V1\Mock\Json\ResponseFacilities.json" />
-    <None Include="V1\Mock\Json\ResponseHotel.json" />
-    <None Include="V1\Mock\Json\ResponseImages.json" />
+    <None Include="V1\Mock\Json\RequestBooking.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="V1\Mock\Json\ResponseAvailabilities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="V1\Mock\Json\ResponseBooking.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="V1\Mock\Json\ResponseFacilities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="V1\Mock\Json\ResponseHotel.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="V1\Mock\Json\ResponseImages.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

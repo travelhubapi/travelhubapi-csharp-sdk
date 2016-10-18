@@ -9,6 +9,11 @@ using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
 using System.Text;
 using TravelHubApi.Sdk.Hotel.V1.Models;
 using TravelHubApi.Sdk.OAuth;
+using TravelHubApi.Sdk.Hotel.V1.Models.Parameters;
+using TravelHubApi.Sdk.Hotel.V1.Models.Enums;
+using System.Collections.Generic;
+using QueryString;
+using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url;
 
 namespace TravelHubApi.Sdk.Hotel.V1
 {
@@ -68,14 +73,38 @@ namespace TravelHubApi.Sdk.Hotel.V1
             return images;
         }
 
-        public Availabilities GetAvailabilities(string destination, DateTime checkIn, DateTime checkOut)
+        public Availabilities GetAvailabilities(
+            string destination, 
+            DateTime checkIn, 
+            DateTime checkOut,
+            RoomParameter[] rooms = null,
+            CurrencyIso currencyIso = CurrencyIso.BRL,
+            string hotelName = null,
+            decimal? minimumStars = null,
+            bool? basicInfo = false,
+            BookingAvailability bookingAvailability = BookingAvailability.Undefined
+            )
         {
+
             var uri = string.Format("{0}/{1}/availabilities/{2}/{3}/{4}",
-                _host, 
-                VERSION, 
-                destination, 
-                checkIn.ToString("yyyy-MM-dd"), 
+                _host,
+                VERSION,
+                destination,
+                checkIn.ToString("yyyy-MM-dd"),
                 checkOut.ToString("yyyy-MM-dd"));
+            
+            var urlParams = new AvailabilitiesParams(
+                rooms,
+                currencyIso,
+                hotelName,
+                minimumStars,
+                basicInfo
+            );
+
+            if (urlParams.HasParams()) {
+                uri += "?" + QS.Stringify(urlParams);
+            }
+
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
             var result = response.Content.ReadAsStringAsync().Result;
             var availabilities = result.ToObject<Availabilities>();

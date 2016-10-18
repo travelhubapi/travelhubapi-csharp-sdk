@@ -25,7 +25,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
         #region Private methods
         private static string GetPath(string path)
         {
-            return Path.GetFullPath(Path.Combine(currentPath, "../../V1/Mock", path));
+            return Path.GetFullPath(Path.Combine(currentPath, "V1/Mock", path));
         }
 
         private static OAuthClient GetOAuth(Settings settings, HttpMethods method,
