@@ -8,7 +8,7 @@ using TravelHubApi.Sdk.Hotel.V1.Models;
 namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body
 {
     [Serializable]
-    public class BookBody
+    public class BookRequest
     {
         #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]

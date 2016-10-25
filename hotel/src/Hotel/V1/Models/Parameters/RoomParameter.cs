@@ -1,16 +1,15 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using TravelHubApi.Sdk.Hotel.V1.Enums;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters
 {
     public class RoomParameter
     {
-        #region Propriedades
         /// <summary>
         /// Gets or sets the number of seniors in the accommodation.
         /// </summary>
@@ -40,6 +39,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters
         /// </summary>
         [JsonProperty(Order = 4)]
         public virtual Bed Bed { get; set; }
-        #endregion
     }
 }

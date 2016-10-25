@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Accommodation
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public virtual string Code { get; set; }
 
@@ -39,6 +38,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 9)]
         public virtual Fares Fares { get; set; }
-        #endregion
     }
 }

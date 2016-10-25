@@ -7,7 +7,8 @@ TestResults
 *.Publish.xml
 *.Cache
 packages
-
+nupkgs
+nupkgs/*
 _UpgradeReport_Files/
 Backup*/
 UpgradeLog*.xml

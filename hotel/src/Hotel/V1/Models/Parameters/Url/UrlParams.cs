@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url
 {
-    internal interface UrlParams
+    internal interface IUrlParams
     {
-        public bool HasParams();
+        bool HasParams();
     }
 }

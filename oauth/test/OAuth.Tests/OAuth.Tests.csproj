@@ -41,6 +41,15 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PublishPackage|AnyCPU'">
+    <OutputPath>bin\PublishPackage\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentAssertions, Version=4.15.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\FluentAssertions.4.15.0\lib\net45\FluentAssertions.dll</HintPath>
@@ -107,6 +116,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Mock\OAuthClientMockCollection.cs" />
     <Compile Include="Mock\OAuthClientMockFixture.cs" />
     <Compile Include="Mock\URLs.cs" />
     <Compile Include="OAuthClientTest.cs" />

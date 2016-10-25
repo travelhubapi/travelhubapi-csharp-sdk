@@ -9,12 +9,10 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Vendor
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public virtual string Id { get; set; }
 
         [JsonProperty(Order = 1)]
         public virtual string Name { get; set; }
-        #endregion
     }
 }

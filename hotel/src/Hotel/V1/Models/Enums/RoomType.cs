@@ -8,22 +8,11 @@ namespace TravelHubApi.Sdk.Hotel.V1.Enums
     [Serializable]
     public enum RoomType
     {
-        /// <remarks/>
         Empty,
-
-        /// <remarks/>
         Single,
-
-        /// <remarks/>
         Double,
-
-        /// <remarks/>
         Twin,
-
-        /// <remarks/>
         Triple,
-
-        /// <remarks/>
         Quadruple
     }
 }

@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Fine
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public string Code { get; set; }
 
@@ -21,6 +20,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 2)]
         public MonetaryValue EquivalentFine { get; set; }
-        #endregion
     }
 }

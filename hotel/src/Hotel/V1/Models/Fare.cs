@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Fare
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public virtual string Id { get; set; }
 
@@ -32,7 +31,7 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         public virtual Taxes Taxes { get; set; }
 
         [JsonProperty(Order = 7)]
-        public virtual Fines CancellationFines { get; set; }
+        public virtual CancellationPolicies CancellationPolicies { get; set; }
 
         [JsonProperty(Order = 8)]
         public virtual string Remarks { get; set; }
@@ -45,6 +44,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 11)]
         public virtual Value Total { get; set; }
-        #endregion
     }
 }

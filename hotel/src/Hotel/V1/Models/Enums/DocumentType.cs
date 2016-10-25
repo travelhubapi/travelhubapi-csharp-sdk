@@ -9,19 +9,19 @@ namespace TravelHubApi.Sdk.Hotel.V1.Enums
     public enum DocumentType
     {
         /// <summary>
-        /// Is undefined.
+        /// Is undefined or not informed;
         /// </summary>
         Undefined = 0,
 
         /// <summary>
-        /// Is CPF.
+        /// It is a document like C.P.F. from Brazil and Social Security Number from U.S.A.
         /// </summary>
-        Cpf = 1,
+        IndividualRegistrationCode = 1,
 
         /// <summary>
-        /// Is RG.
+        ///  Identity document like R.G. from Brazil.
         /// </summary>
-        Rg = 2,
+        Id = 2,
 
         /// <summary>
         /// Is Passport.

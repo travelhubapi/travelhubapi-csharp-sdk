@@ -1,17 +1,16 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using TravelHubApi.Sdk.Hotel.V1.Models.Enums;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models
 {
     public class CreditCardPaymentMethod
     {
-        #region Properties
         /// <summary>
         /// Gets or sets the credit card origin
         /// </summary>
@@ -87,6 +86,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         /// </summary>
         [JsonProperty(Order = 11)]
         public virtual string TravelRequest { get; set; }
-        #endregion
     }
 }

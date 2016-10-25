@@ -7,14 +7,18 @@ using Newtonsoft.Json;
 namespace TravelHubApi.Sdk.Hotel.V1.Models
 {
     [Serializable]
-    public class Facilities {
-        #region Propriedades | Campos | Membros
+    public class Facilities 
+    {
         [JsonProperty(Order = 0)]
-        public int Count { get { return Items != null ? Items.Count : 0; } set { } }
+        public int Count 
+        { 
+            get 
+            { 
+                return Items != null ? Items.Count : 0; 
+            } 
+        }
 
         [JsonProperty(Order = 1)]
-        public List<Facility> Items { get; set; }
-        #endregion
-    
+        public List<Facility> Items { get; set; }    
     }
 }

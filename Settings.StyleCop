@@ -1,6 +1,17 @@
 <StyleCopSettings Version="105">
   <GlobalSettings>
     <BooleanProperty Name="ViolationsAsErrors">True</BooleanProperty>
+    <StringProperty Name="MergeSettingsFiles">NoMerge</StringProperty>
+    <CollectionProperty Name="RecognizedWords">
+      <Value>adt</Value>
+      <Value>chd</Value>
+      <Value>cpf</Value>
+      <Value>Elo</Value>
+      <Value>Hipercard</Value>
+      <Value>iso</Value>
+      <Value>rg</Value>
+      <Value>snr</Value>
+    </CollectionProperty>
   </GlobalSettings>
   <Analyzers>
     <Analyzer AnalyzerId="StyleCop.CSharp.OrderingRules">
@@ -15,12 +26,12 @@
     </Analyzer>
     <Analyzer AnalyzerId="StyleCop.CSharp.NamingRules">
       <Rules>
-        <Rule Name="FieldNamesMustNotContainUnderscore">
+        <Rule Name="FieldNamesMustNotBeginWithUnderscore">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
         </Rule>
-        <Rule Name="FieldNamesMustNotBeginWithUnderscore">
+        <Rule Name="FieldNamesMustNotContainUnderscore">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>
@@ -31,6 +42,26 @@
     <Analyzer AnalyzerId="StyleCop.CSharp.DocumentationRules">
       <Rules>
         <Rule Name="FileMustHaveHeader">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ElementDocumentationMustBeSpelledCorrectly">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="ElementsMustBeDocumented">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="PartialElementsMustBeDocumented">
+          <RuleSettings>
+            <BooleanProperty Name="Enabled">False</BooleanProperty>
+          </RuleSettings>
+        </Rule>
+        <Rule Name="EnumerationItemsMustBeDocumented">
           <RuleSettings>
             <BooleanProperty Name="Enabled">False</BooleanProperty>
           </RuleSettings>

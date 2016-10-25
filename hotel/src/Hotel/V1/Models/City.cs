@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class City
     {
-        #region Propriedades
         [JsonProperty(Order = 0)]
         public virtual string Id { get; set; }
 
@@ -30,6 +29,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 6)]
         public virtual Country Country { get; set; }
-        #endregion
     }
 }

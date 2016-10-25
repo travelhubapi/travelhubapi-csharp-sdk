@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class TimeResult
     {
-        #region Propriedades | Campos | Membros
         /// <summary>
         /// Gets or sets the supplier 
         /// </summary>
@@ -27,6 +26,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         /// </summary>
         [JsonProperty(Order = 2)]
         public virtual string Exception { get; set; }
-        #endregion
     }
 }

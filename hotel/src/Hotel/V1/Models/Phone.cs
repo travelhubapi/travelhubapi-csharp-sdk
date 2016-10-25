@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Phone
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public virtual short? CountryCode { get; set; }
 
@@ -18,6 +17,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 2)]
         public virtual int? Number { get; set; }
-        #endregion
     }
 }

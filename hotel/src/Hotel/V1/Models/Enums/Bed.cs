@@ -8,28 +8,27 @@ namespace TravelHubApi.Sdk.Hotel.V1.Enums
     public enum Bed
     {
         /// <summary>
-        /// Irrelevant.
+        /// Is irrelevant.
         /// </summary>
         Irrelevant = 0,
 
         /// <summary>
-        /// Cama, quarto duplo (twin room). 
-        /// Cama de hotel para uma pessoa, geralmente com um colchão de tamanho 90 cm x 190-200 cm.
+        /// Single Bed.
         /// </summary>
         Single = 1,
 
         /// <summary>
-        /// Double.
+        /// Double Bed.
         /// </summary>
         Double = 2,
 
         /// <summary>
-        /// Queen Size.
+        /// Queen Size Bed.
         /// </summary>
         QueenSize = 3,
 
         /// <summary>
-        /// King Size.
+        /// King Size Bed.
         /// </summary>
         KingSize = 4,
     }

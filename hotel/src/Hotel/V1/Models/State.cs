@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class State
     {
-        #region Propriedades
         [JsonProperty(Order = 0)]
         public virtual string Id { get; set; }
 
@@ -21,6 +20,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 4)]
         public virtual Country Country { get; set; }
-        #endregion
     }
 }

@@ -7,16 +7,8 @@ using TravelHubApi.Sdk.Hotel.V1.Models.Enums;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url
 {
-
-    internal class AvailabilitiesParams : UrlParams
+    internal class AvailabilitiesParams : IUrlParams
     {
-        public RoomParameter[] rooms { get; set; }
-        public CurrencyIso currencyIso { get; set; }
-        public string hotelName { get; set; }
-        public decimal? minimumStars { get; set; }
-        public bool? basicInfo { get; set; }
-        public BookingAvailability bookingAvailability { get; set; }
-
         public AvailabilitiesParams(
             RoomParameter[] rooms,
             CurrencyIso currencyIso,
@@ -24,22 +16,34 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url
             decimal? minimumStars,
             bool? basicInfo)
         {
-            this.rooms = rooms;
-            this.currencyIso = currencyIso;
-            this.hotelName = hotelName;
-            this.minimumStars = minimumStars;
-            this.basicInfo = basicInfo;
-            this.bookingAvailability = bookingAvailability;
+            Rooms = rooms;
+            CurrencyIso = currencyIso;
+            HotelName = hotelName;
+            MinimumStars = minimumStars;
+            BasicInfo = basicInfo;
+            BookingAvailability = BookingAvailability;
         }
+
+        public RoomParameter[] Rooms { get; set; }
+
+        public CurrencyIso CurrencyIso { get; set; }
+
+        public string HotelName { get; set; }
+
+        public decimal? MinimumStars { get; set; }
+
+        public bool? BasicInfo { get; set; }
+
+        public BookingAvailability BookingAvailability { get; set; }
 
         public bool HasParams()
         {
-            return rooms != null ||
-                currencyIso != CurrencyIso.BRL ||
-                !String.IsNullOrEmpty(hotelName) ||
-                minimumStars.HasValue ||
-                basicInfo == true ||
-                bookingAvailability != BookingAvailability.Undefined;
+            return Rooms != null ||
+                CurrencyIso != CurrencyIso.BRL ||
+                !string.IsNullOrEmpty(HotelName) ||
+                MinimumStars.HasValue ||
+                BasicInfo == true ||
+                BookingAvailability != BookingAvailability.Undefined;
         }
     }
 }

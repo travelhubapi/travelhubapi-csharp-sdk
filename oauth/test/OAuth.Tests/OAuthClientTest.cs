@@ -1,25 +1,28 @@
-﻿using HttpMock;
-using RichardSzalay.MockHttp;
-using Sdk.OAuth.Tests.Mock;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Text;
+using FluentAssertions;
+using HttpMock;
+using RichardSzalay.MockHttp;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.OAuth;
+using TravelHubApi.Sdk.OAuth.Tests.Mock;
 using Xunit;
-using FluentAssertions;
-using System.Net;
 
-namespace Sdk.OAuth.Tests
+namespace TravelHubApi.Sdk.OAuth.Tests
 {
     [Collection("OAuthClientMock collection")]
     public class OAuthClientTest
     {
-        OAuthClient oauth { get; set; }
-        Settings settings { get; set; }
-        MockHttpMessageHandler mockHttp { get; set; }
-        OAuthClientMockFixture oAuthClientMockFixture { get; set; }
+        private OAuthClient oauth;
+
+        private Settings settings;
+
+        private MockHttpMessageHandler mockHttp;
+
+        private OAuthClientMockFixture oAuthClientMockFixture;
 
         public OAuthClientTest(OAuthClientMockFixture oAuthClientMockFixture)
         {
@@ -45,7 +48,7 @@ namespace Sdk.OAuth.Tests
             var authorization = result.RequestMessage.Headers.Authorization;
 
             authorization.Scheme.Should().Be("Bearer");
-            authorization.Parameter.Should().Be(oauth.client.tokenResponse.AccessToken);
+            authorization.Parameter.Should().Be(oauth.Client.tokenResponse.AccessToken);
             result.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
@@ -59,8 +62,8 @@ namespace Sdk.OAuth.Tests
             var authorization = result.RequestMessage.Headers.Authorization;
 
             authorization.Scheme.Should().Be("Bearer");
-            authorization.Parameter.Should().Be(oauth.client.tokenResponse.AccessToken);
-            authorization.Parameter.Should().Be((String)oAuthClientMockFixture.refreshedToken.access_token);
+            authorization.Parameter.Should().Be(oauth.Client.tokenResponse.AccessToken);
+            authorization.Parameter.Should().Be((string)oAuthClientMockFixture.RefreshedToken.access_token);
             result.StatusCode.Should().Be(HttpStatusCode.OK);
         }
     }

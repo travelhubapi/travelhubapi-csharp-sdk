@@ -9,7 +9,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Hotel
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public virtual string Id { get; set; }
 
@@ -34,9 +33,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         [JsonProperty(Order = 7)]
         public virtual string Broker { get; set; }
 
-        /// <summary>
-        /// Gets or sets the supplier of hotel information.
-        /// </summary>
         [JsonProperty(Order = 8)]
         public virtual string Supplier { get; set; }
 
@@ -54,6 +50,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
 
         [JsonProperty(Order = 13)]
         public virtual Images Images { get; set; }
-        #endregion
     }
 }

@@ -9,17 +9,17 @@ namespace TravelHubApi.Sdk.Hotel.V1.Enums
     public enum GuestType
     {
         /// <summary>
-        ///   Senior.
+        ///   Senior guest.
         /// </summary>
         Snr = 1,
 
         /// <summary>
-        ///   Adult.
+        ///   Adult guest.
         /// </summary>
         Adt = 2,
 
         /// <summary>
-        ///   Child.
+        ///   Child guest.
         /// </summary>
         Chd = 3
     }

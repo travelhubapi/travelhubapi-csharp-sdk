@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TravelHubApi.Sdk.OAuth2")]
+[assembly: AssemblyTitle("TravelHubApi.Sdk.OAuth")]
 [assembly: AssemblyDescription("C# Sdk for oauth2 context from TravelhubApi")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Flytour-Gapnet")]
-[assembly: AssemblyProduct("TravelHubApi.Sdk.OAuth2")]
+[assembly: AssemblyCompany("Flytour")]
+[assembly: AssemblyProduct("TravelHubApi.Sdk.OAuth")]
 [assembly: AssemblyCopyright("Copyright © TravelHubApi 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.0.1")]
-[assembly: AssemblyFileVersion("0.0.0.1")]
+[assembly: AssemblyVersion("0.0.1")]
+[assembly: AssemblyFileVersion("0.0.1")]

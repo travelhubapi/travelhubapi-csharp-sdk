@@ -10,7 +10,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     [Serializable]
     public class Guest
     {
-        #region Propriedades | Campos | Membros
         [JsonProperty(Order = 0)]
         public virtual string FirstName { get; set; }
 
@@ -21,16 +20,15 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         public virtual Document Document { get; set; }
 
         [JsonProperty(Order = 3, DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public virtual Gender? Gender { get; set; }
+        public virtual Gender Gender { get; set; }
 
         [JsonProperty(Order = 4, DefaultValueHandling = DefaultValueHandling.Ignore)]
-        public virtual GuestType? GuestType { get; set; }
+        public virtual GuestType GuestType { get; set; }
 
         [JsonProperty(Order = 5)]
         public virtual short? Age { get; set; }
 
         [JsonProperty(Order = 6)]
-        public virtual DateTime? BirthDate { get; set; }
-        #endregion
+        public virtual DateTime BirthDate { get; set; }
     }
 }
