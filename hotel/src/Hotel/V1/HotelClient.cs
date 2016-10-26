@@ -12,6 +12,7 @@ using TravelHubApi.Sdk.Hotel.V1.Models.Parameters;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url;
 using TravelHubApi.Sdk.OAuth;
+using TravelHubApi.Sdk.Common.Exceptions;
 
 namespace TravelHubApi.Sdk.Hotel.V1
 {
@@ -280,7 +281,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
                 return;
             }
 
-            throw new Exception(response.Content.ReadAsStringAsync().Result);
+            throw new SDKRequestException(response);
         }
     }
 }
