@@ -67,7 +67,6 @@
     <Compile Include="V1\Mock\HotelMock.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="V1\Mock\Json\RequestBooking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
