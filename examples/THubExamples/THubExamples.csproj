@@ -74,10 +74,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TravelHubApi.Sdk.Client, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.Client.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="TravelHubApi.Sdk.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.Common.dll</HintPath>
       <Private>True</Private>
@@ -90,8 +86,12 @@
       <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.OAuth.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="TravelHubApiSDK">
+      <HintPath>..\..\packages\TravelHubApiSDK.0.0.1\lib\net45\TravelHubApiSDK.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexts\Hotel\HotelExamples.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
