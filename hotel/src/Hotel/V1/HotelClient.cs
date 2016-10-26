@@ -142,8 +142,8 @@ namespace TravelHubApi.Sdk.Hotel.V1
                 _host,
                 VERSION,
                 locationId,
-                checkIn.ToString("yyyy-MM-dd"),
-                checkOut.ToString("yyyy-MM-dd"));
+                checkIn.ToIso8601DateFormat(),
+                checkOut.ToIso8601DateFormat());
             
             var urlParams = new AvailabilitiesParams(
                 rooms,
@@ -201,8 +201,8 @@ namespace TravelHubApi.Sdk.Hotel.V1
                 "{0}/{1}/{2}/{3}/cancellation_policies",
                 _host,
                 VERSION,
-                checkIn.ToString("yyyy-MM-dd"),
-                checkOut.ToString("yyyy-MM-dd"));
+                checkIn.ToIso8601DateFormat(),
+                checkOut.ToIso8601DateFormat());
 
             var getCancellationPoliciesRequestContent = new StringContent(hotel.ToJson(), Encoding.UTF8, "application/json");
             var response = _oauth.RequestAsync(HttpMethods.Post, uri, getCancellationPoliciesRequestContent).Result;

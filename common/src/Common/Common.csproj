@@ -57,7 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\SDKRequestException.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Helpers\JSONConverters\FloatJsonConverter.cs" />
     <Compile Include="Helpers\Environment.cs" />
     <Compile Include="Helpers\HttpMethods.cs" />
