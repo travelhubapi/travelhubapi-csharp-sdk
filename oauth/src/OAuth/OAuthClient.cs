@@ -73,7 +73,7 @@ namespace TravelHubApi.Sdk.OAuth
 
         public string TokenUrl { get; set; }
 
-        public OAuthHttpClient Client { get; set; }
+        public OAuthHttpClient HttpClient { get; set; }
         #endregion
 
         public virtual Task<HttpResponseMessage> RequestAsync(HttpMethods method, string uri, HttpContent content = null)
@@ -83,13 +83,13 @@ namespace TravelHubApi.Sdk.OAuth
             switch (method)
             {
                 case HttpMethods.Post:
-                    response = Client.PostAsync(uri, content);
+                    response = HttpClient.PostAsync(uri, content);
                     break;
                 case HttpMethods.Get:
-                    response = Client.GetAsync(uri);
+                    response = HttpClient.GetAsync(uri);
                     break;
                 case HttpMethods.Delete:
-                    response = Client.DeleteAsync(uri);
+                    response = HttpClient.DeleteAsync(uri);
                     break;
                 default:
                     throw new NotImplementedException();
@@ -124,7 +124,7 @@ namespace TravelHubApi.Sdk.OAuth
 
             oAuthHttpHandler = new OAuthHttpHandler(options);
 
-            Client = OAuthHttpClient.Factory(options);
+            HttpClient = OAuthHttpClient.Factory(options);
         }
     }
 }

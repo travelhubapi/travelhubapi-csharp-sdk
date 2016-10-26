@@ -110,7 +110,7 @@
     <Compile Include="V1\Models\Locator.cs" />
     <Compile Include="V1\Models\MealPlan.cs" />
     <Compile Include="V1\Models\MonetaryValue.cs" />
-    <Compile Include="V1\Models\Parameters\Body\BookBody.cs" />
+    <Compile Include="V1\Models\Parameters\Body\BookRequest.cs" />
     <Compile Include="V1\Models\Parameters\RoomParameter.cs" />
     <Compile Include="V1\Models\Parameters\Url\AvailabilitiesParams.cs" />
     <Compile Include="V1\Models\Parameters\Url\UrlParams.cs" />

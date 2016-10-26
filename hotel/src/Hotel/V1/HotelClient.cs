@@ -247,6 +247,12 @@ namespace TravelHubApi.Sdk.Hotel.V1
             var result = response.Content.ReadAsStringAsync().Result;
         }
 
+        /// <summary>
+        /// Get the possible locations to availabilities of hotels filtering by description.
+        /// </summary>
+        /// <param name="description">Description of a place, can be a part of the city or state name (minimum of 3 characters).</param>
+        /// <param name="limit">Maximum number of items to be returned in response.</param>
+        /// <returns>Locations list.</returns>
         public Locations GetLocations(string description, int? limit = null)
         {
             var uri = string.Format("{0}/{1}/locations/{2}", _host, VERSION, description);

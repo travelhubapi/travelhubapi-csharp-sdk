@@ -48,7 +48,7 @@ namespace TravelHubApi.Sdk.OAuth.Tests
             var authorization = result.RequestMessage.Headers.Authorization;
 
             authorization.Scheme.Should().Be("Bearer");
-            authorization.Parameter.Should().Be(oauth.Client.tokenResponse.AccessToken);
+            authorization.Parameter.Should().Be(oauth.HttpClient.tokenResponse.AccessToken);
             result.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
@@ -62,7 +62,7 @@ namespace TravelHubApi.Sdk.OAuth.Tests
             var authorization = result.RequestMessage.Headers.Authorization;
 
             authorization.Scheme.Should().Be("Bearer");
-            authorization.Parameter.Should().Be(oauth.Client.tokenResponse.AccessToken);
+            authorization.Parameter.Should().Be(oauth.HttpClient.tokenResponse.AccessToken);
             authorization.Parameter.Should().Be((string)oAuthClientMockFixture.RefreshedToken.access_token);
             result.StatusCode.Should().Be(HttpStatusCode.OK);
         }
