@@ -1,9 +1,9 @@
 [submodule "libs/oauth2-client-handler"]
-	path = libs/oauth2-client-handler
-	url = https://github.com/travelhubapi/oauth2-client-handler
+  path = libs/oauth2-client-handler
+  url = https://github.com/travelhubapi/oauth2-client-handler
 [submodule "libs/csharp-qs"]
-	path = libs/csharp-qs
-	url = git@github.com:travelhubapi/csharp-qs.git
+  path = libs/csharp-qs
+  url = https://github.com/travelhubapi/csharp-qs.git
 [submodule "libs/mockhttp"]
-	path = libs/mockhttp
-	url = git@github.com:travelhubapi/mockhttp.git
+  path = libs/mockhttp
+  url = https://github.com/travelhubapi/mockhttp.git
