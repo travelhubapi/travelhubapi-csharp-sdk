@@ -50,14 +50,6 @@
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="OAuth2ClientHandler, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\OAuth2ClientHandler.1.0.0\lib\net45\OAuth2ClientHandler.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="QueryString, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\QueryString.0.0.1\lib\net45\QueryString.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
@@ -97,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\client\src\Client\Client.csproj">
+      <Project>{71e5bfd2-313e-4f97-8284-50083ec735e6}</Project>
+      <Name>Client</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
