@@ -79,9 +79,6 @@
       <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.OAuth.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="TravelHubApiSDK">
-      <HintPath>..\..\packages\TravelHubApiSDK.0.0.1\lib\net45\TravelHubApiSDK.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\Hotel\V1\HotelExamples.cs" />

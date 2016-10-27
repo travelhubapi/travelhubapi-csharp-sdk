@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TravelHubApi SDK")]
+[assembly: AssemblyTitle("TravelHubApi.Sdk.Client")]
 [assembly: AssemblyDescription("SDK to consume TravelHubApi")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Flytour")]
-[assembly: AssemblyProduct("TravelHubApi SDK")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyProduct("TravelHubApi.Sdk.Client")]
+[assembly: AssemblyCopyright("Copyright © TravelHubApi 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
