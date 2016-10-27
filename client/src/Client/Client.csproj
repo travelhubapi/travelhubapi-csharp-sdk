@@ -64,9 +64,6 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Nuget auto publish start -->
   <PropertyGroup>
-    <NugetExe>$(SolutionDir).nuget\NuGet.exe</NugetExe>
-  </PropertyGroup>
-  <PropertyGroup>
     <NugetExe>nuget</NugetExe>
     <NugetExe Condition="Exists('$(SolutionDir).nuget\NuGet.exe')">$(SolutionDir).nuget\NuGet.exe</NugetExe>
   </PropertyGroup>
