@@ -4,6 +4,3 @@
 [submodule "libs/csharp-qs"]
   path = libs/csharp-qs
   url = https://github.com/travelhubapi/csharp-qs.git
-[submodule "libs/mockhttp"]
-  path = libs/mockhttp
-  url = https://github.com/travelhubapi/mockhttp.git
