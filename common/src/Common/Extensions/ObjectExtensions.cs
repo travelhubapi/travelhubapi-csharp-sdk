@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Common.Helpers.JSONConverters;
 
 namespace TravelHubApi.Sdk.Common.Extensions

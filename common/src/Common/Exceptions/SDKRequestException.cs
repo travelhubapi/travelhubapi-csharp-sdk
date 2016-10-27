@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using TravelHubApi.Sdk.Common.Extensions;
 
 namespace TravelHubApi.Sdk.Common.Exceptions
 {
     public class SDKRequestException : Exception
     {
+        #region Constructors | Destructors
         public SDKRequestException(HttpResponseMessage responseMessage)
             : base(ParseMessage(responseMessage))
         {
@@ -26,16 +21,21 @@ namespace TravelHubApi.Sdk.Common.Exceptions
 
             ResponseStatusCode = responseMessage.StatusCode;
         }
+        #endregion
 
+        #region Properties
         public string CorrelationId { get; set; }
 
-        public HttpStatusCode ResponseStatusCode { get; set; }
+        public HttpStatusCode ResponseStatusCode { get; set; } 
+        #endregion
 
+        #region Private Methods
         private static string ParseMessage(HttpResponseMessage responseMessage)
         {
             var content = responseMessage.Content.ReadAsStringAsync().Result;
             var error = JsonConvert.DeserializeObject(content) as dynamic;
             return (string)error.message;
-        }
+        } 
+        #endregion
     }
 }

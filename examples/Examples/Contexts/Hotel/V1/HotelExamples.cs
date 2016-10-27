@@ -1,10 +1,8 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Newtonsoft.Json;
 using TravelHubApi.Sdk.Client;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel.V1;
@@ -25,7 +23,7 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
 
         public static void Run()
         {
-            //-> Settings
+            ////-> Settings
             var settings = new Settings();
 
             settings.Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog;
@@ -35,23 +33,23 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             var checkIn = DateTime.Now.AddDays(30);
             var checkOut = DateTime.Now.AddDays(37);
 
-            //-> Client
+            ////-> Client
             var client = new TravelHubApiClient(settings);
             var hotelClient = client.HotelClient;
             
-            //-> GetLocation
+            ////-> GetLocation
             var locationId = GetLocationId(hotelClient);
 
-            //-> GetAvailabilities
+            ////-> GetAvailabilities
             var hotel = GetHotelAvailable(hotelClient, locationId, checkIn, checkOut);
 
-            //-> Book
+            ////-> Book
             var booking = Book(hotelClient, hotel, checkIn, checkOut);
 
-            //////-> GetBooking
+            ////-> GetBooking
             var bookingData = GetBooking(hotelClient, booking.Code);
 
-            //////-> CancelBooking
+            ////-> CancelBooking
             CancelBooking(hotelClient, bookingData.Code);
             
             RecordOutputWriteLine();
@@ -172,7 +170,7 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             RecordOutputWriteLine();
 
             RecordOutput("Getting accommodations...");
-            //-> Could be more than one accommodation
+            ////-> Could be more than one accommodation
             var accomodation = hotel.Accommodations.Items.FirstOrDefault();
             RecordOutput(string.Format("{0} Accommodation code got.", accomodation.Code));
             

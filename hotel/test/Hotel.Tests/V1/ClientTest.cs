@@ -66,7 +66,6 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1
                 new RoomParameter() 
                 {
                     Adt = 1,
-                    Bed = Bed.Double,
                     Chd = 1,
                     ChdAges = new List<short>() { 2 }
                 }

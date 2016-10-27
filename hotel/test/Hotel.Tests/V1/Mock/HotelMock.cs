@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Net.Http;
@@ -9,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Moq;
-using Newtonsoft.Json;
 using TravelHubApi.Sdk.Common.Extensions;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel.V1.Models;
@@ -29,7 +26,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
             return GetOAuth(
                 settings,
                 HttpMethods.Get,
-                "http://hotel.stg.travelhubapi.com.br/v1/availabilities/locationId/2016-10-10/2016-10-13?Rooms[0][Snr]=0&Rooms[0][Adt]=1&Rooms[0][Chd]=1&Rooms[0][ChdAges][0]=2&Rooms[0][Bed]=Double&CurrencyIso=BRL&BasicInfo=False&BookingAvailability=Undefined",
+                "http://hotel.stg.travelhubapi.com.br/v1/availabilities/locationId/2016-10-10/2016-10-13?Rooms[0][Snr]=0&Rooms[0][Adt]=1&Rooms[0][Chd]=1&Rooms[0][ChdAges][0]=2&CurrencyIso=BRL&BasicInfo=False&BookingAvailability=Undefined",
                 GetAvailabilitiesJSONResponse(),
                 null,
                 HttpStatusCode.OK);
@@ -281,7 +278,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests.V1.Mock
         #endregion
         #endregion
 
-        #region Private methods
+        #region Private Methods
         private static string GetPath(string path)
         {
             return Path.GetFullPath(Path.Combine(currentPath, "V1/Mock", path));

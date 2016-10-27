@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Text;
+﻿using System.Net;
 using FluentAssertions;
-using HttpMock;
 using RichardSzalay.MockHttp;
 using TravelHubApi.Sdk.Common.Helpers;
-using TravelHubApi.Sdk.OAuth;
 using TravelHubApi.Sdk.OAuth.Tests.Mock;
 using Xunit;
 
@@ -16,26 +10,26 @@ namespace TravelHubApi.Sdk.OAuth.Tests
     [Collection("OAuthClientMock collection")]
     public class OAuthClientTest
     {
-        private OAuthClient oauth;
+        private OAuthClient _oauth;
 
-        private Settings settings;
+        private Settings _settings;
 
-        private MockHttpMessageHandler mockHttp;
+        private MockHttpMessageHandler _mockHttp;
 
-        private OAuthClientMockFixture oAuthClientMockFixture;
+        private OAuthClientMockFixture _oAuthClientMockFixture;
 
         public OAuthClientTest(OAuthClientMockFixture oAuthClientMockFixture)
         {
-            this.oAuthClientMockFixture = oAuthClientMockFixture;
-            settings = new Settings
+            this._oAuthClientMockFixture = oAuthClientMockFixture;
+            _settings = new Settings
             {
                 Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog,
                 ClientId = "ClientId",
                 ClientSecret = "ClientSecret"
             };
 
-            mockHttp = this.oAuthClientMockFixture.GetMockHandler();
-            oauth = new OAuthClient(settings, mockHttp);
+            _mockHttp = this._oAuthClientMockFixture.GetMockHandler();
+            _oauth = new OAuthClient(_settings, _mockHttp);
         }
 
         [Trait("OAuth", "")]
@@ -43,12 +37,12 @@ namespace TravelHubApi.Sdk.OAuth.Tests
         [Fact(DisplayName = "OAuth - Request with Authorization header")]
         public void Should_Call_With_Authorization_Header()
         {
-            var response = oauth.RequestAsync(HttpMethods.Get, URLs.REPONSE_OK);
+            var response = _oauth.RequestAsync(HttpMethods.Get, URLs.ResponseOk);
             var result = response.Result;
             var authorization = result.RequestMessage.Headers.Authorization;
 
             authorization.Scheme.Should().Be("Bearer");
-            authorization.Parameter.Should().Be(oauth.HttpClient.tokenResponse.AccessToken);
+            authorization.Parameter.Should().Be(_oauth.HttpClient.tokenResponse.AccessToken);
             result.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
@@ -57,13 +51,13 @@ namespace TravelHubApi.Sdk.OAuth.Tests
         [Fact(DisplayName = "OAuth - Refresh token when receive 401")]
         public void Should_RefreshToken_When_401_And_Try_Again()
         {
-            var response = oauth.RequestAsync(HttpMethods.Get, URLs.REPONSE_UNATHORIZED_FIRST_TIME);
+            var response = _oauth.RequestAsync(HttpMethods.Get, URLs.ResponseUnauthorizedFirstTime);
             var result = response.Result;
             var authorization = result.RequestMessage.Headers.Authorization;
 
             authorization.Scheme.Should().Be("Bearer");
-            authorization.Parameter.Should().Be(oauth.HttpClient.tokenResponse.AccessToken);
-            authorization.Parameter.Should().Be((string)oAuthClientMockFixture.RefreshedToken.access_token);
+            authorization.Parameter.Should().Be(_oauth.HttpClient.tokenResponse.AccessToken);
+            authorization.Parameter.Should().Be((string)_oAuthClientMockFixture.RefreshedToken.access_token);
             result.StatusCode.Should().Be(HttpStatusCode.OK);
         }
     }

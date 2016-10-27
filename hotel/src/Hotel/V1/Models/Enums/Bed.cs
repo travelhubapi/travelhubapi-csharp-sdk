@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Enums
 {
+    [Serializable]
     public enum Bed
     {
         /// <summary>
@@ -30,6 +28,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Enums
         /// <summary>
         /// King Size Bed.
         /// </summary>
-        KingSize = 4,
+        KingSize = 4
     }
 }

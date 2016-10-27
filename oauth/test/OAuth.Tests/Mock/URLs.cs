@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TravelHubApi.Sdk.OAuth.Tests.Mock
+﻿namespace TravelHubApi.Sdk.OAuth.Tests.Mock
 {
     public static class URLs
     {
-        public static string REPONSE_OK 
+        public static string ResponseOk 
         { 
             get 
             { 
@@ -16,11 +10,11 @@ namespace TravelHubApi.Sdk.OAuth.Tests.Mock
             } 
         }
 
-        public static string REPONSE_UNATHORIZED_FIRST_TIME
+        public static string ResponseUnauthorizedFirstTime
         { 
             get 
             { 
-                return "Http://unathorized1.com"; 
+                return "Http://unauthorized1.com"; 
             } 
         } 
     }

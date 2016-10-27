@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
-using TravelHubApi.Sdk.Hotel.V1.Models;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body
 {
     [Serializable]
     public class BookRequest
     {
-        #region Propriedades | Campos | Membros
+        #region Properties
         [JsonProperty(Order = 0)]
         public virtual string Id { get; set; }
 
@@ -18,7 +14,7 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body
         public virtual string BookingGroup { get; set; }
 
         [JsonProperty(Order = 2)]
-        public virtual int? SalesType { get; set; }
+        public virtual int? SalesModule { get; set; }
 
         [JsonProperty(Order = 3)]
         public virtual DateTime ExpireDate { get; set; }
@@ -29,9 +25,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body
         [JsonProperty(Order = 5)]
         public virtual DateTime CheckOut { get; set; }
 
-        /// <summary>
-        /// Gets or sets the user model
-        /// </summary>
         [JsonProperty(Order = 6)]
         public virtual Vendor Vendor { get; set; }
 

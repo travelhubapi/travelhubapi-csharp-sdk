@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TravelHubApi.Sdk.OAuth.Tests.Mock;
+﻿using TravelHubApi.Sdk.OAuth.Tests.Mock;
 using Xunit;
 
 namespace Sdk.OAuth.Tests.Mock

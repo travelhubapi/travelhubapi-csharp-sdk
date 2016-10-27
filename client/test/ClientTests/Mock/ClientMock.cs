@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Net.Http;
@@ -52,7 +50,7 @@ namespace TravelHubApi.Sdk.Client.Tests.Mock
                 HttpStatusCode.NoContent);
         }
 
-        #region Private methods
+        #region Private Methods
         private static OAuthClient GetOAuth(
             Settings settings,
             HttpMethods method,

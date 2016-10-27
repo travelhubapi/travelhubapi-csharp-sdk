@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Text;
 using FluentAssertions;
-using Moq;
-using TravelHubApi.Sdk.Client;
 using TravelHubApi.Sdk.Client.Tests.Mock;
 using TravelHubApi.Sdk.Common.Helpers;
 using Xunit;

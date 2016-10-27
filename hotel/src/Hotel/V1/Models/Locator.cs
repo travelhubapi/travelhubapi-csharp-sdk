@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models
@@ -10,7 +7,7 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
     public class Locator
     {
         [JsonProperty(Order = 0)]
-        public virtual string Supplier { get; set; }
+        public virtual string Broker { get; set; }
 
         [JsonProperty(Order = 1)]
         public virtual string Hotel { get; set; }

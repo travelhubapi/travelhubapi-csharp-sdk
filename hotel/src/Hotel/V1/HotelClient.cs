@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net;
 using System.Net.Http;
 using System.Text;
 using QueryString;
@@ -18,7 +16,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
 {
     public class HotelClient
     {
-        #region Private properties
+        #region Fields | Members
         private const string VERSION = "v1";
 
         private string _host;
@@ -30,15 +28,15 @@ namespace TravelHubApi.Sdk.Hotel.V1
         public HotelClient(Settings settings, OAuthClient oauth)
         {
             _host = settings.Environment == Common.Helpers.Environment.Production
-                  ? HotelClient.PRODUCTION_HOST
-                  : HotelClient.HOMOLOG_HOST;
+                  ? HotelClient.ProductionHost
+                  : HotelClient.HomologHost;
 
             _oauth = oauth;
         }
         #endregion
 
-        #region Static Properties
-        public static string HOMOLOG_HOST
+        #region Properties
+        public static string HomologHost
         {
             get
             {
@@ -46,7 +44,7 @@ namespace TravelHubApi.Sdk.Hotel.V1
             }
         }
 
-        public static string PRODUCTION_HOST
+        public static string ProductionHost
         {
             get
             {

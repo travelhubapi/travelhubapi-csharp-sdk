@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models
@@ -13,9 +10,9 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         public string Code { get; set; }
 
         [JsonProperty(Order = 1)]
-        public MonetaryValue BaseFee { get; set; }
+        public MonetaryValue BaseTax { get; set; }
 
         [JsonProperty(Order = 2)]
-        public MonetaryValue EquivalentFee { get; set; }
+        public MonetaryValue EquivalentTax { get; set; }
     }
 }

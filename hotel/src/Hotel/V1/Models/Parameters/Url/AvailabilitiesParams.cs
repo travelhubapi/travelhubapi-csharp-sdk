@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TravelHubApi.Sdk.Hotel.V1.Models.Enums;
+﻿using TravelHubApi.Sdk.Hotel.V1.Models.Enums;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url
 {
@@ -21,7 +16,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url
             HotelName = hotelName;
             MinimumStars = minimumStars;
             BasicInfo = basicInfo;
-            BookingAvailability = BookingAvailability;
         }
 
         public RoomParameter[] Rooms { get; set; }

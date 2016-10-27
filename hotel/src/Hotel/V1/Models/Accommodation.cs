@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
 
 namespace TravelHubApi.Sdk.Hotel.V1.Models
@@ -34,7 +31,7 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         public virtual int? Children { get; set; }
 
         [JsonProperty(Order = 8)]
-        public virtual short AvailableRooms { get; set; }
+        public virtual short? AvailableRooms { get; set; }
 
         [JsonProperty(Order = 9)]
         public virtual Fares Fares { get; set; }

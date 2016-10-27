@@ -1,26 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace TravelHubApi.Sdk.Common.Helpers.JSONConverters
 {
     public class FloatJsonConverter : JsonConverter
     {
+        #region Constructors | Destructors
         public FloatJsonConverter()
         {
-        }
+        } 
+        #endregion
 
+        #region Properties
         public override bool CanRead
         {
             get
             {
                 return false;
             }
-        }
+        } 
+        #endregion
 
+        #region Public Methods
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             throw new NotImplementedException("Unnecessary because CanRead is false. The type will skip the converter.");
@@ -32,8 +33,8 @@ namespace TravelHubApi.Sdk.Common.Helpers.JSONConverters
             return objectType == typeof(decimal) ||
                 objectType == typeof(float) ||
                 objectType == typeof(double) ||
-                nullable == typeof(decimal) || 
-                nullable == typeof(float) || 
+                nullable == typeof(decimal) ||
+                nullable == typeof(float) ||
                 nullable == typeof(double);
         }
 
@@ -47,8 +48,10 @@ namespace TravelHubApi.Sdk.Common.Helpers.JSONConverters
             {
                 writer.WriteRawValue(JsonConvert.ToString(value));
             }
-        }
+        } 
+        #endregion
 
+        #region Private Methods
         private static bool IsWholeValue(object value)
         {
             if (value is decimal)
@@ -64,6 +67,7 @@ namespace TravelHubApi.Sdk.Common.Helpers.JSONConverters
             }
 
             return false;
-        }
+        } 
+        #endregion
     }
 }

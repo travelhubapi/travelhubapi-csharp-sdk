@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
 using TravelHubApi.Sdk.Hotel.V1.Enums;
 
@@ -29,6 +26,6 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models
         public virtual short? Age { get; set; }
 
         [JsonProperty(Order = 6)]
-        public virtual DateTime BirthDate { get; set; }
+        public virtual DateTime? BirthDate { get; set; }
     }
 }

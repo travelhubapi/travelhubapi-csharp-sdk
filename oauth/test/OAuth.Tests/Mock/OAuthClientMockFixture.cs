@@ -1,35 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using RichardSzalay.MockHttp;
 using TravelHubApi.Sdk.Common.Helpers;
-using TravelHubApi.Sdk.OAuth;
-using Xunit;
 
 namespace TravelHubApi.Sdk.OAuth.Tests.Mock
 {
     public class OAuthClientMockFixture : IDisposable
     {
         #region Fields
-        private string currentPath;
+        private string _currentPath;
 
-        private string tokenStr;
+        private string _tokenStr;
 
-        private string refreshedTokenStr;
+        private string _refreshedTokenStr;
         #endregion
 
         public OAuthClientMockFixture()
         {
-            currentPath = Directory.GetCurrentDirectory();
+            _currentPath = Directory.GetCurrentDirectory();
+            _tokenStr = LoadFiles.LoadJsonString(GetPath("Json/ResponseToken.json"));
+            _refreshedTokenStr = LoadFiles.LoadJsonString(GetPath("Json/ResponseRefreshToken.json"));
+
             Token = LoadFiles.LoadJsonObj(GetPath("Json/ResponseToken.json"));
-            tokenStr = LoadFiles.LoadJsonString(GetPath("Json/ResponseToken.json"));
             RefreshedToken = LoadFiles.LoadJsonObj(GetPath("Json/ResponseRefreshToken.json"));
-            refreshedTokenStr = LoadFiles.LoadJsonString(GetPath("Json/ResponseRefreshToken.json"));
         }
 
         #region Properties
@@ -38,16 +33,16 @@ namespace TravelHubApi.Sdk.OAuth.Tests.Mock
         public dynamic RefreshedToken { get; set; }
         #endregion
 
-        #region Public methods
+        #region Public Methods
         public MockHttpMessageHandler GetMockHandler()
         {
             var mockHttp = new MockHttpMessageHandler();
 
             CreateTokenMock(mockHttp);
-            CreateResponseOKMock(URLs.REPONSE_OK, mockHttp);
-            CreateResponseUnathorizedMock(URLs.REPONSE_UNATHORIZED_FIRST_TIME, mockHttp);
+            CreateResponseOKMock(URLs.ResponseOk, mockHttp);
+            CreateResponseUnathorizedMock(URLs.ResponseUnauthorizedFirstTime, mockHttp);
             CreateRefreshTokenMock(mockHttp);
-            CreateResponseOKWithRefreshedTokenMock(URLs.REPONSE_UNATHORIZED_FIRST_TIME, mockHttp);
+            CreateResponseOKWithRefreshedTokenMock(URLs.ResponseUnauthorizedFirstTime, mockHttp);
 
             return mockHttp;
         }
@@ -57,16 +52,16 @@ namespace TravelHubApi.Sdk.OAuth.Tests.Mock
         } 
         #endregion
 
-        #region Private methods
+        #region Private Methods
         private MockHttpMessageHandler CreateTokenMock(
             MockHttpMessageHandler mockHttp, 
             int times = 1)
         {
             for (var i = 0; i < times; i++)
             {
-                mockHttp.When(HttpMethod.Post, OAuthClient.HOMOLOG_HOST + OAuthClient.TOKEN_PATH)
+                mockHttp.When(HttpMethod.Post, OAuthClient.HomologHost + OAuthClient.TokenPath)
                     .WithFormData("grant_type=client_credentials")
-                    .Respond("application/json", tokenStr);
+                    .Respond("application/json", _tokenStr);
             }
 
             return mockHttp;
@@ -78,9 +73,9 @@ namespace TravelHubApi.Sdk.OAuth.Tests.Mock
         {
             for (var i = 0; i < times; i++)
             {
-                mockHttp.When(HttpMethod.Post, OAuthClient.HOMOLOG_HOST + OAuthClient.TOKEN_PATH)
+                mockHttp.When(HttpMethod.Post, OAuthClient.HomologHost + OAuthClient.TokenPath)
                     .WithFormData("grant_type=refresh_token&refresh_token=" + (string)Token.refresh_token)
-                    .Respond("application/json", refreshedTokenStr);
+                    .Respond("application/json", _refreshedTokenStr);
             }
 
             return mockHttp;
@@ -133,7 +128,7 @@ namespace TravelHubApi.Sdk.OAuth.Tests.Mock
 
         private string GetPath(string path)
         {
-            return Path.GetFullPath(Path.Combine(currentPath, "Mock", path));
+            return Path.GetFullPath(Path.Combine(_currentPath, "Mock", path));
         }
         #endregion
     }
