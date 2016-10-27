@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 using QueryString;
+using TravelHubApi.Sdk.Common.Exceptions;
 using TravelHubApi.Sdk.Common.Extensions;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel.V1.Models;
@@ -12,7 +13,6 @@ using TravelHubApi.Sdk.Hotel.V1.Models.Parameters;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
 using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Url;
 using TravelHubApi.Sdk.OAuth;
-using TravelHubApi.Sdk.Common.Exceptions;
 
 namespace TravelHubApi.Sdk.Hotel.V1
 {
