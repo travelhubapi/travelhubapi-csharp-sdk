@@ -33,11 +33,5 @@ namespace TravelHubApi.Sdk.Hotel.V1.Models.Parameters
         /// </summary>
         [JsonProperty(Order = 3)]
         public List<short> ChdAges { get; set; }
-
-        /// <summary>
-        /// Gets or sets the type of bed in the room.
-        /// </summary>
-        [JsonProperty(Order = 4)]
-        public virtual Bed Bed { get; set; }
     }
 }

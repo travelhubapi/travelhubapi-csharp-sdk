@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using THubExamples.Contexts.Hotel;
+using TravelHubApi.Sdk.Examples.Contexts.Hotel.V1;
 
-namespace THubExamples
+namespace TravelHubApi.Sdk.Examples
 {
     public class Program
     {
