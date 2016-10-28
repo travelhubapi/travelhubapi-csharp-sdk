@@ -216,14 +216,20 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="description">Description of a place, can be a part of the city or state name (minimum of 3 characters).</param>
         /// <param name="limit">Maximum number of items to be returned in response.</param>
+        /// <param name="countryCode">Filter locations by country code (ISO 3166).</param>
         /// <returns>Locations list.</returns>
-        public ApiResponse<Locations> GetLocations(string description, int? limit = null)
+        public ApiResponse<Locations> GetLocations(string description, int? limit = null, string countryCode = null)
         {
             var uri = string.Format("{0}/{1}/locations/{2}", _host, VERSION, description);
 
             if (limit.HasValue)
             {
                 uri += string.Format("?limit={0}", limit);
+            } 
+            
+            if (!string.IsNullOrEmpty(countryCode))
+            {
+                uri += string.Format("?countryCode={0}", countryCode);
             }
 
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;

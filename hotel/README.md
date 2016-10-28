@@ -65,6 +65,7 @@ Name        | Type      |  Description
 ----------- | --------- | -----------
 `description`| `string` | Description of a place, can be a part of the city or state name (minimum of 3 characters)
 `limit`  | `int`  | Maximum number of items to be returned in response
+`countryCode`  | `int`  | Filter locations by country code (ISO 3166)
 
 **Return**
 
