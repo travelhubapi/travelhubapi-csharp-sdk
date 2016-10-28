@@ -29,7 +29,7 @@ Create a TravelHubApiClient instance
 
 Name        | Type          |  Description
 ----------- | ------------- | -----------
-`settings`  | [`Settings`](../common/src/Common/Helpers/Settings.cs)| Settings with environment and credentials
+`settings`  | [`Settings`](../common/src/Common/API/Settings.cs)| Settings with environment and credentials
 
 #### `new TravelHubApiClient(Settings settings, OAuthClient oauth)`
 
@@ -39,7 +39,7 @@ Create a TravelHubApiClient instance with a custom OAuthClient instance
 
 Name        | Type          |  Description
 ----------- | ------------- | -----------
-`settings`  | [`Settings`](../common/src/Common/Helpers/Settings.cs)| Settings with environment and credentials
+`settings`  | [`Settings`](../common/src/Common/API/Settings.cs)| Settings with environment and credentials
 `oauth`     | [`OAuthClient`](../oauth/src/OAuth/OAuthClient.cs) | OAuthClient Instance
 
 ### Properties
