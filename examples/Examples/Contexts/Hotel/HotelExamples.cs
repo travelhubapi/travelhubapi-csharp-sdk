@@ -116,10 +116,10 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel
                 checkIn,
                 checkOut,
                 roomParameters);
-            ////RecordOutput(JsonConvert.SerializeObject(availabilities));
 
             var availabilities = availabilitiesResponse.Content;
             var availability = availabilities.Items.FirstOrDefault();
+            //// RecordOutput(JsonConvert.SerializeObject(availabilities));
             RecordOutput(string.Format("{0} hotels available returned.", availability.Hotels.Count));
 
             RecordOutputWriteLine();
@@ -224,10 +224,10 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel
             RecordOutputWriteLine();
 
             RecordOutput(string.Format("Getting booking with code = '{0}'...", bookingCode));
-            var booking = new Sdk.Hotel.Models.Booking { Code = bookingCode };
-            ////var bookingResponse = client.GetBooking(bookingCode);
-            ////var booking = bookingResponse.content;
-            ////RecordOutput(JsonConvert.SerializeObject(booking));
+            
+            var bookingResponse = client.GetBooking(bookingCode);
+            var booking = bookingResponse.Content;
+            RecordOutput(JsonConvert.SerializeObject(booking));
             RecordOutput("Booking got.", Block.Ending);
 
             return booking;
@@ -240,7 +240,7 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel
             RecordOutputWriteLine();
 
             RecordOutput(string.Format("Canceling booking with code = '{0}'...", bookingCode));
-            ////client.CancelBooking(bookingCode, "vendor@domain.com");
+            client.CancelBooking(bookingCode, "vendor@domain.com");
             RecordOutput("Booking canceled.", Block.Ending);
         }
     
