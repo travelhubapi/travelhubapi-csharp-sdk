@@ -26,7 +26,7 @@ Client to call hotel endpoints
 
 ## Definitions
 
-**Namespace:** TravelHubApi.Sdk.Hotel.V1
+**Namespace:** TravelHubApi.Sdk.Hotel
 
 ### Constructors
 
@@ -38,7 +38,7 @@ Create a HotelClient instance
 
 Name        | Type          |  Description
 ----------- | ------------- | -----------
-`settings`  | [`Settings`](../common/src/Common/Helpers/Settings.cs)| Settings with environment and credentials
+`settings`  | [`Settings`](../common/src/Common/API/Settings.cs)| Settings with environment and credentials
 `oauth`     | [`OAuthClient`](../oauth/src/OAuth/OAuthClient.cs) | OAuthClient Instance
 
 ### Properties
@@ -71,7 +71,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Locations`](src/Hotel/V1/Models/Locations.cs)`>` | A list of locations
+ `ApiResponse<`[`Locations`](src/Hotel/Models/Locations.cs)`>` | A list of locations
 
 #### GetAvailabilities
 
@@ -84,18 +84,18 @@ Name        | Type      |  Description
 `locationId`| `string`  | Location ID from get locations api
 `checkIn`   | `DateTime`| Check-in date (ISO 8601 date with YYYY-MM-DD format)
 `checkOut`  | `DateTime`| Check-out date (ISO 8601 date with YYYY-MM-DD format)
-`rooms`     | [`RoomParameter`](src/Hotel/V1/Models/Parameters/RoomParameter.cs) | Information about accommodation and guests
-`currencyIso` | [`CurrencyIso`](src/Hotel/V1/Models/Enums/CurrencyIso.cs)  | Currency ISO in which they will be returned the hotel rate values
+`rooms`     | [`RoomParameter`](src/Hotel/Models/Parameters/RoomParameter.cs) | Information about accommodation and guests
+`currencyIso` | [`CurrencyIso`](src/Hotel/Models/Enums/CurrencyIso.cs)  | Currency ISO in which they will be returned the hotel rate values
 `hotelName` | `string`  | Filter the hotels by the part of name
 `minimumStars`| `decimal`| Filter the hotels by minimum stars that hotel must have
 `basicInfo`  | `bool`   | Get hotel basic (true) or complete (default or false) information
-`bookingAvailability`| [`BookingAvailability`](src/Hotel/V1/Models/Enums/BookingAvailability.cs)  | Booking availability type: <br>**`AvailableNow`** - Hotels available for booking <br> **`AvailableNowAndOnRequest`** - - Hotels available for booking and also booking on request
+`bookingAvailability`| [`BookingAvailability`](src/Hotel/Models/Enums/BookingAvailability.cs)  | Booking availability type: <br>**`AvailableNow`** - Hotels available for booking <br> **`AvailableNowAndOnRequest`** - - Hotels available for booking and also booking on request
 
 **Return**
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Availabilities`](src/Hotel/V1/Models/Availabilities.cs)`>` | List of availabilities of hotel
+ `ApiResponse<`[`Availabilities`](src/Hotel/Models/Availabilities.cs)`>` | List of availabilities of hotel
 
 #### GetHotel
 
@@ -111,7 +111,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Hotel`](src/Hotel/V1/Models/Hotel.cs)`>` | Hotel Information
+ `ApiResponse<`[`Hotel`](src/Hotel/Models/Hotel.cs)`>` | Hotel Information
 
 #### GetFacilities
 
@@ -127,7 +127,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Facilities`](src/Hotel/V1/Models/Facilities.cs)`>` | List of hotel Facilities
+ `ApiResponse<`[`Facilities`](src/Hotel/Models/Facilities.cs)`>` | List of hotel Facilities
 
 #### GetImages
 
@@ -143,7 +143,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Images`](src/Hotel/V1/Models/Images.cs)`>` | List of hotel Images
+ `ApiResponse<`[`Images`](src/Hotel/Models/Images.cs)`>` | List of hotel Images
 
 #### GetCancellationPolicies
 
@@ -155,13 +155,13 @@ Name        | Type      |  Description
 ----------- | --------- | -----------
 `checkIn`   | `DateTime`| Check-in date (ISO 8601 date with YYYY-MM-DD format)
 `checkOut`  | `DateTime`| Check-out date (ISO 8601 date with YYYY-MM-DD format)
-`hotel`     | [`Hotel`](src/Hotel/V1/Models/Hotel.cs)| Hotel that has the cancellation policies
+`hotel`     | [`Hotel`](src/Hotel/Models/Hotel.cs)| Hotel that has the cancellation policies
 
 **Return**
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`CancellationPolicies`](src/Hotel/V1/Models/CancellationPolicies.cs)`>` | Hotel cancellation policies
+ `ApiResponse<`[`CancellationPolicies`](src/Hotel/Models/CancellationPolicies.cs)`>` | Hotel cancellation policies
 
 #### Book
 
@@ -171,13 +171,13 @@ Book a hotel without payment.
 
 Name        | Type      |  Description
 ----------- | --------- | -----------
-`bookRequest`| [`BookRequest`](src/Hotel/V1/Models/Parameters/Body/BookRequest.cs)| Booking to be created
+`bookRequest`| [`BookRequest`](src/Hotel/Models/Parameters/Body/BookRequest.cs)| Booking to be created
 
 **Return**
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Booking`](src/Hotel/V1/Models/Booking.cs)`>` | Booking created with locators and expiration date
+ `ApiResponse<`[`Booking`](src/Hotel/Models/Booking.cs)`>` | Booking created with locators and expiration date
 
 #### GetBooking
 
@@ -193,7 +193,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- `ApiResponse<`[`Booking`](src/Hotel/V1/Models/Booking.cs)`>` | Booking information
+ `ApiResponse<`[`Booking`](src/Hotel/Models/Booking.cs)`>` | Booking information
 
 #### CancelBooking
 
@@ -210,7 +210,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`ApiResponse`](src/Hotel/V1/Models/ApiResponse.cs) | Response info
+ [`ApiResponse`](src/Hotel/Models/ApiResponse.cs) | Response info
 
 
 ## Referencies
