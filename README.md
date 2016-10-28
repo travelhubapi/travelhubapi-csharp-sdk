@@ -26,8 +26,8 @@
 var settings = new TravelHubApi.Sdk.Common.Helpers.Settings();
 
 settings.Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog;
-settings.ClientId = System.Environment.GetEnvironmentVariable("THUB_CLIENT_ID");
-settings.ClientSecret = System.Environment.GetEnvironmentVariable("THUB_CLIENT_SECRET");
+settings.ClientId = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_ID");
+settings.ClientSecret = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_SECRET");
 
 var client = new TravelHubApiClient(settings);
 ```
@@ -52,7 +52,7 @@ if (response.IsSuccessStatusCode) {
 
 ```cs
 var hotelClient = client.HotelClient;
-var locations = hotelClient.GetLocations("fort");
+var locations = hotelClient.GetLocations("fort").Content;
 var checkIn = DateTime.Now.AddDays(1);
 var checkOut = DateTime.Now.AddDays(3);
 var location = locations.Items.FirstOrDefault();
@@ -68,8 +68,8 @@ var availabilities = hotelClient.GetAvailabilities(
   location.Id,
   checkIn,
   checkOut,
-  rooms);
- var availability = availabilities.Items.FirstOrDefault();
+  rooms).Content;
+var availability = availabilities.Items.FirstOrDefault();
 var hotel = availability.Hotels.Items.FirstOrDefault();
 var accomodation = hotel.Accommodations.Items.FirstOrDefault();
 
@@ -107,17 +107,17 @@ accomodation.Guests.Items = new List<Guest>()
 
 hotel.Accommodations.Items = new List<Accommodation>()
 {
-    accomodation
+  accomodation
 };
 
 var bookRequest = new BookBody()
 {
-    CheckIn = checkIn,
-    CheckOut = checkOut,
-    Hotel = hotel
+  CheckIn = checkIn,
+  CheckOut = checkOut,
+  Hotel = hotel
 };
 
-var booking = hotelClient.Book(bookRequest);
+var booking = hotelClient.Book(bookRequest).Content;
 ```
 
 [See documentation](hotel/README.md)

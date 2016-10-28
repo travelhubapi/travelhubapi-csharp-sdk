@@ -11,7 +11,7 @@ using TravelHubApi.Sdk.Hotel.Models;
 using TravelHubApi.Sdk.Hotel.Models.Parameters;
 using TravelHubApi.Sdk.Hotel.Models.Parameters.Body;
 
-namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
+namespace TravelHubApi.Sdk.Examples.Contexts.Hotel
 {
     public class HotelExamples
     {
