@@ -9,8 +9,8 @@ Client to call hotel endpoints
   - [Constructors](#constructors)
   - [Properties](#properties)
     - [Statics](#statics)
-      - [HOMOLOG_HOST](#homolog_host)
-      - [PRODUCTION_HOST](#production_host)
+      - [HomologHost](#homologhost)
+      - [ProductionHost](#productionhost)
   - [Methods](#methods)
     - [GetLocations](#getlocations)
     - [GetAvailabilities](#getavailabilities)
@@ -45,11 +45,11 @@ Name        | Type          |  Description
 
 #### Statics
 
-##### HOMOLOG_HOST
+##### HomologHost
 
 Url homologation environment
 
-##### PRODUCTION_HOST
+##### ProductionHost
 
 Url production environment
 

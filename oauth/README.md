@@ -8,10 +8,10 @@ Client to call endpoints with authentication
   - [Constructors](#constructors)
   - [Properties](#properties)
     - [Statics](#statics)
-      - [HOMOLOG_HOST](#homolog_host)
-      - [PRODUCTION_HOST](#production_host)
-      - [AUTHORIZE_PATH](#authorize_path)
-      - [TOKEN_PATH](#token_path)
+      - [HomologHost](#homologhost)
+      - [ProductionHost](#productionhost)
+      - [AuthorizePath](#authorizepath)
+      - [TokenPath](#tokenpath)
     - [Instance](#instance)
       - [Host](#host)
       - [AuthorizeUrl](#authorizeurl)
@@ -51,19 +51,19 @@ Name        | Type          |  Description
 
 #### Statics
 
-##### HOMOLOG_HOST
+##### HomologHost
 
 Url homologation environment
 
-##### PRODUCTION_HOST
+##### ProductionHost
 
 Url production environment
 
-##### AUTHORIZE_PATH
+##### AuthorizePath
 
 Authorization path
 
-##### TOKEN_PATH
+##### TokenPath
 
 Token path
 
