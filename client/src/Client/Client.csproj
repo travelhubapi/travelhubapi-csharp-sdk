@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TravelHubApi.Sdk.Client</RootNamespace>
-    <AssemblyName>TravelHubApi.Sdk.Client</AssemblyName>
+    <AssemblyName>TravelHubApiSDK</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
