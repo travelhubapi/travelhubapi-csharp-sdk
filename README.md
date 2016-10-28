@@ -23,9 +23,9 @@
 ### Creating client
 
 ```cs
-var settings = new TravelHubApi.Sdk.Common.Helpers.Settings();
+var settings = new TravelHubApi.Sdk.Common.API.Settings();
 
-settings.Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog;
+settings.Environment = TravelHubApi.Sdk.Common.API.Enums.Environment.Homolog;
 settings.ClientId = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_ID");
 settings.ClientSecret = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_SECRET");
 
@@ -60,8 +60,7 @@ var rooms = new RoomParameter[]
 {
   new RoomParameter()
   {
-    Adt = 1,
-    Bed = Bed.Double
+    Adt = 1
   }
 };
 var availabilities = hotelClient.GetAvailabilities(
@@ -110,7 +109,7 @@ hotel.Accommodations.Items = new List<Accommodation>()
   accomodation
 };
 
-var bookRequest = new BookBody()
+var bookRequest = new BookRequest()
 {
   CheckIn = checkIn,
   CheckOut = checkOut,
