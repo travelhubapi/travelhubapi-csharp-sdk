@@ -80,8 +80,6 @@ namespace TravelHubApi.Sdk.OAuth
         {
             Task<HttpResponseMessage> response;
 
-            HttpClient.DefaultRequestHeaders.AcceptLanguage.TryParseAdd(_language.GetDescription());
-            
             switch (method)
             {
                 case HttpMethods.Post:
@@ -127,6 +125,8 @@ namespace TravelHubApi.Sdk.OAuth
             _oAuthHttpHandler = new OAuthHttpHandler(_options);
 
             HttpClient = OAuthHttpClient.Factory(_options);
+
+            HttpClient.DefaultRequestHeaders.AcceptLanguage.TryParseAdd(_language.GetDescription());
         }
     }
 }
