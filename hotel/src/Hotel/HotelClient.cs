@@ -59,17 +59,12 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="track">Hotel track code.</param>
         /// <returns>Hotel information</returns>
-        public Models.Hotel GetHotel(string track)
+        public ApiResponse<Models.Hotel> GetHotel(string track)
         {
             var uri = string.Format("{0}/{1}/hotels/{2}", _host, VERSION, track);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
-
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var hotel = result.ToObject<Models.Hotel>();
-
-            return hotel;
+            var apiResponse = GenerateApiResponse<Models.Hotel>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -77,17 +72,12 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="track">Hotel track code.</param>
         /// <returns>Hotel Facilities</returns>
-        public Facilities GetFacilities(string track)
+        public ApiResponse<Facilities> GetFacilities(string track)
         {
             var uri = string.Format("{0}/{1}/hotels/{2}/facilities", _host, VERSION, track);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
-
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var facilities = result.ToObject<Facilities>();
-
-            return facilities;
+            var apiResponse = GenerateApiResponse<Facilities>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -95,17 +85,12 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="track">Hotel track code.</param>
         /// <returns>Hotel Images</returns>
-        public Images GetImages(string track)
+        public ApiResponse<Images> GetImages(string track)
         {
             var uri = string.Format("{0}/{1}/hotels/{2}/images", _host, VERSION, track);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
-
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var images = result.ToObject<Images>();
-
-            return images;
+            var apiResponse = GenerateApiResponse<Images>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -124,7 +109,7 @@ namespace TravelHubApi.Sdk.Hotel
         ///     <para> * 'AvailableNowAndOnRequest' - Hotels available for booking and also booking on request.</para>
         /// </param>
         /// <returns>Availabilities of hotels.</returns>
-        public Availabilities GetAvailabilities(
+        public ApiResponse<Availabilities> GetAvailabilities(
             string locationId, 
             DateTime checkIn, 
             DateTime checkOut,
@@ -156,13 +141,8 @@ namespace TravelHubApi.Sdk.Hotel
             }
 
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
-
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var availabilities = result.ToObject<Availabilities>();
-
-            return availabilities;
+            var apiResponse = GenerateApiResponse<Availabilities>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -172,18 +152,13 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="bookRequest">Booking to be created.</param>
         /// <returns>Booking created with locators and expiration date.</returns>
-        public Booking Book(BookRequest bookRequest)
+        public ApiResponse<Booking> Book(BookRequest bookRequest)
         {
             var uri = string.Format("{0}/{1}/bookings", _host, VERSION);
             var bookRequestContent = new StringContent(bookRequest.ToJson(), Encoding.UTF8, "application/json");
             var response = _oauth.RequestAsync(HttpMethods.Post, uri, bookRequestContent).Result;
-            
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var booking = result.ToObject<Booking>();
-
-            return booking;
+            var apiResponse = GenerateApiResponse<Booking>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -193,7 +168,7 @@ namespace TravelHubApi.Sdk.Hotel
         /// <param name="checkOut">Check-out date (ISO 8601 date with YYYY-MM-DD format).</param>
         /// <param name="hotel">Hotel that has the cancellation policies.</param>
         /// <returns>Hotel cancellation policies.</returns>
-        public CancellationPolicies GetCancellationPolicies(DateTime checkIn, DateTime checkOut, Models.Hotel hotel)
+        public ApiResponse<CancellationPolicies> GetCancellationPolicies(DateTime checkIn, DateTime checkOut, Models.Hotel hotel)
         {
             var uri = string.Format(
                 "{0}/{1}/{2}/{3}/cancellation_policies",
@@ -204,13 +179,8 @@ namespace TravelHubApi.Sdk.Hotel
 
             var getCancellationPoliciesRequestContent = new StringContent(hotel.ToJson(), Encoding.UTF8, "application/json");
             var response = _oauth.RequestAsync(HttpMethods.Post, uri, getCancellationPoliciesRequestContent).Result;
-
-            VerifyStatusCode(response);
-
-            var result = response.Content.ReadAsStringAsync().Result;
-            var cancellationPolicies = result.ToObject<CancellationPolicies>();
-
-            return cancellationPolicies;
+            var apiResponse = GenerateApiResponse<CancellationPolicies>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -218,17 +188,12 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="bookingCode">Booking code.</param>
         /// <returns>Booking information.</returns>
-        public Booking GetBooking(string bookingCode)
+        public ApiResponse<Booking> GetBooking(string bookingCode)
         {
             var uri = string.Format("{0}/{1}/bookings/{2}", _host, VERSION, bookingCode);
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
-            
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var booking = result.ToObject<Booking>();
-
-            return booking;
+            var apiResponse = GenerateApiResponse<Booking>(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -236,14 +201,13 @@ namespace TravelHubApi.Sdk.Hotel
         /// </summary>
         /// <param name="bookingCode">Booking code.</param>
         /// <param name="vendorId">Vendor Id.</param>
-        public void CancelBooking(string bookingCode, string vendorId)
+        /// <returns>Response Headers</returns>
+        public ApiResponse CancelBooking(string bookingCode, string vendorId)
         {
             var uri = string.Format("{0}/{1}/bookings/{2}/{3}", _host, VERSION, bookingCode, vendorId);
             var response = _oauth.RequestAsync(HttpMethods.Delete, uri).Result;
-
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
+            var apiResponse = GenerateApiResponse(response);
+            return apiResponse;
         }
 
         /// <summary>
@@ -252,7 +216,7 @@ namespace TravelHubApi.Sdk.Hotel
         /// <param name="description">Description of a place, can be a part of the city or state name (minimum of 3 characters).</param>
         /// <param name="limit">Maximum number of items to be returned in response.</param>
         /// <returns>Locations list.</returns>
-        public Locations GetLocations(string description, int? limit = null)
+        public ApiResponse<Locations> GetLocations(string description, int? limit = null)
         {
             var uri = string.Format("{0}/{1}/locations/{2}", _host, VERSION, description);
 
@@ -262,15 +226,29 @@ namespace TravelHubApi.Sdk.Hotel
             }
 
             var response = _oauth.RequestAsync(HttpMethods.Get, uri).Result;
-
-            VerifyStatusCode(response);
-            
-            var result = response.Content.ReadAsStringAsync().Result;
-            var locations = result.ToObject<Locations>();
-
-            return locations;
+            var apiResponse = GenerateApiResponse<Locations>(response);
+            return apiResponse;
         }
         #endregion
+
+        private ApiResponse<T> GenerateApiResponse<T>(HttpResponseMessage response)
+            where T : class, new()
+        {
+            VerifyStatusCode(response);
+
+            var apiResponse = new ApiResponse<T>(response);
+
+            return apiResponse;
+        }
+
+        private ApiResponse GenerateApiResponse(HttpResponseMessage response)
+        {
+            VerifyStatusCode(response);
+
+            var apiResponse = new ApiResponse(response);
+
+            return apiResponse;
+        }
 
         private void VerifyStatusCode(HttpResponseMessage response)
         {

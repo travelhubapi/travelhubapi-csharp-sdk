@@ -60,6 +60,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ApiResponse.cs" />
+    <Compile Include="Models\ApiResponseOfTypeT.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HotelClient.cs" />
     <Compile Include="Models\Accommodation.cs" />

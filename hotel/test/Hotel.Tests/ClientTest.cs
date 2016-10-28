@@ -70,7 +70,11 @@ namespace TravelHubApi.Sdk.Hotel.Tests
                     ChdAges = new List<short>() { 2 }
                 }
             };
-            var availabilities = hotelClient.GetAvailabilities("locationId", checkIn, checkOut, rooms);
+            var availabilities = hotelClient.GetAvailabilities(
+                "locationId",
+                checkIn,
+                checkOut,
+                rooms).Content;
             var availabilitiesExpected = HotelMock.GetAvailabilitiesResponse();
 
             availabilities.Should().NotBeNull();
@@ -88,7 +92,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
             var hotelClient = new HotelClient(
                 settings,
                 HotelMock.GetOAuthToHotelResponse(settings));
-            var hotel = hotelClient.GetHotel("track");
+            var hotel = hotelClient.GetHotel("track").Content;
             var hotelExpected = HotelMock.GetHotelResponse();
 
             hotel.Should().NotBeNull();
@@ -105,7 +109,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
             var hotelClient = new HotelClient(
                 settings,
                 HotelMock.GetOAuthToFacilitiesResponse(settings));
-            var facilites = hotelClient.GetFacilities("track");
+            var facilites = hotelClient.GetFacilities("track").Content;
             var facilitiesExpected = HotelMock.GetFacilitiesResponse();
 
             facilites.Should().NotBeNull();
@@ -121,7 +125,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
             var hotelClient = new HotelClient(
                 settings,
                 HotelMock.GetOAuthToImagesResponse(settings));
-            var images = hotelClient.GetImages("track");
+            var images = hotelClient.GetImages("track").Content;
             var imagesExpected = HotelMock.GetImagesResponse();
 
             images.Should().NotBeNull();
@@ -141,7 +145,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
 
             bookRequest.Should().NotBeNull();
 
-            var booking = hotelClient.Book(bookRequest);
+            var booking = hotelClient.Book(bookRequest).Content;
             var bookingExpected = HotelMock.GetBookResponse();
 
             booking.Should().NotBeNull();
@@ -171,7 +175,10 @@ namespace TravelHubApi.Sdk.Hotel.Tests
 
             getCancellationPoliciesRequest.Should().NotBeNull();
 
-            var cancellationPolicies = hotelClient.GetCancellationPolicies(checkIn, checkOut, getCancellationPoliciesRequest);
+            var cancellationPolicies = hotelClient.GetCancellationPolicies(
+                checkIn, 
+                checkOut,
+                getCancellationPoliciesRequest).Content;
             var cancellationPoliciesExpected = HotelMock.GetCancellationPoliciesResponse();
 
             cancellationPolicies.Should().NotBeNull();
@@ -188,7 +195,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
                 settings,
                 HotelMock.GetOAuthToBookingResponse(settings));
 
-            var booking = hotelClient.GetBooking("bookingCode");
+            var booking = hotelClient.GetBooking("bookingCode").Content;
             var bookingExpected = HotelMock.GetBookingResponse();
 
             booking.Should().NotBeNull();
@@ -216,7 +223,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
             var hotelClient = new HotelClient(
                 settings,
                 HotelMock.GetOAuthToLocationsResponse(settings));
-            var locations = hotelClient.GetLocations("description");
+            var locations = hotelClient.GetLocations("description").Content;
             var locationsExpected = HotelMock.GetLocationsResponse();
 
             locations.Should().NotBeNull();

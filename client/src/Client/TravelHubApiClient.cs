@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel;
@@ -11,12 +12,24 @@ namespace TravelHubApi.Sdk.Client
         #region Constructors | Destructors
         public TravelHubApiClient(Settings settings, OAuthClient oauth)
         {
+            if (string.IsNullOrEmpty(settings.ClientId)
+                || string.IsNullOrEmpty(settings.ClientId))
+            {
+                throw new Exception("ClientId and ClientSecret are required");
+            }
+
             OAuthClient = oauth;
             HotelClient = new Hotel.HotelClient(settings, OAuthClient);
         }
 
         public TravelHubApiClient(Settings settings)
         {
+            if (string.IsNullOrEmpty(settings.ClientId)
+                || string.IsNullOrEmpty(settings.ClientId))
+            {
+                throw new Exception("ClientId and ClientSecret are required");
+            }
+
             OAuthClient = new OAuthClient(settings);
             HotelClient = new HotelClient(settings, OAuthClient);
         }

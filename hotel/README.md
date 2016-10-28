@@ -70,7 +70,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Locations`](src/Hotel/V1/Models/Locations.cs) | A list of locations
+ `ApiResponse<`[`Locations`](src/Hotel/V1/Models/Locations.cs)`>` | A list of locations
 
 #### GetAvailabilities
 
@@ -94,7 +94,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Availabilities`](src/Hotel/V1/Models/Availabilities.cs) | List of availabilities of hotel
+ `ApiResponse<`[`Availabilities`](src/Hotel/V1/Models/Availabilities.cs)`>` | List of availabilities of hotel
 
 #### GetHotel
 
@@ -110,7 +110,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Hotel`](src/Hotel/V1/Models/Hotel.cs) | Hotel Information
+ `ApiResponse<`[`Hotel`](src/Hotel/V1/Models/Hotel.cs)`>` | Hotel Information
 
 #### GetFacilities
 
@@ -126,7 +126,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Facilities`](src/Hotel/V1/Models/Facilities.cs) | List of hotel Facilities
+ `ApiResponse<`[`Facilities`](src/Hotel/V1/Models/Facilities.cs)`>` | List of hotel Facilities
 
 #### GetImages
 
@@ -142,7 +142,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Images`](src/Hotel/V1/Models/Images.cs) | List of hotel Images
+ `ApiResponse<`[`Images`](src/Hotel/V1/Models/Images.cs)`>` | List of hotel Images
 
 #### GetCancellationPolicies
 
@@ -160,7 +160,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`CancellationPolicies`](src/Hotel/V1/Models/CancellationPolicies.cs) | Hotel cancellation policies
+ `ApiResponse<`[`CancellationPolicies`](src/Hotel/V1/Models/CancellationPolicies.cs)`>` | Hotel cancellation policies
 
 #### Book
 
@@ -176,7 +176,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Booking`](src/Hotel/V1/Models/Booking.cs) | Booking created with locators and expiration date
+ `ApiResponse<`[`Booking`](src/Hotel/V1/Models/Booking.cs)`>` | Booking created with locators and expiration date
 
 #### GetBooking
 
@@ -192,7 +192,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- [`Booking`](src/Hotel/V1/Models/Booking.cs) | Booking information
+ `ApiResponse<`[`Booking`](src/Hotel/V1/Models/Booking.cs)`>` | Booking information
 
 #### CancelBooking
 
@@ -209,7 +209,7 @@ Name        | Type      |  Description
 
  Type                        | Description
  --------------------------- | -----------
- `void` |
+ [`ApiResponse`](src/Hotel/V1/Models/ApiResponse.cs) | Response info
 
 
 ## Referencies

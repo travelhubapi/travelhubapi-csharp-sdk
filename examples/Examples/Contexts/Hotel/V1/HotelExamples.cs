@@ -27,8 +27,8 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             var settings = new Settings();
 
             settings.Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog;
-            settings.ClientId = System.Environment.GetEnvironmentVariable("THUB_CLIENT_ID");
-            settings.ClientSecret = System.Environment.GetEnvironmentVariable("THUB_CLIENT_SECRET");
+            settings.ClientId = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_ID");
+            settings.ClientSecret = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_SECRET");
 
             var checkIn = DateTime.Now.AddDays(30);
             var checkOut = DateTime.Now.AddDays(37);
@@ -68,7 +68,8 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             RecordOutputWriteLine();
 
             RecordOutput(string.Format("Getting locations with description = '{0}'...", description));
-            var locations = client.GetLocations(description);
+            var locationsResponse = client.GetLocations(description);
+            var locations = locationsResponse.Content;
             RecordOutput(string.Format("{0} locations returned.", locations.Count));
 
             RecordOutputWriteLine();
@@ -110,13 +111,14 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             RecordOutputWriteLine();
 
             RecordOutput("Getting availabilities...");
-            var availabilities = client.GetAvailabilities(
+            var availabilitiesResponse = client.GetAvailabilities(
                 locationId,
                 checkIn,
                 checkOut,
                 roomParameters);
             ////RecordOutput(JsonConvert.SerializeObject(availabilities));
 
+            var availabilities = availabilitiesResponse.Content;
             var availability = availabilities.Items.FirstOrDefault();
             RecordOutput(string.Format("{0} hotels available returned.", availability.Hotels.Count));
 
@@ -206,7 +208,8 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             };
 
             ////RecordOutput(JsonConvert.SerializeObject(bookRequest));
-            var booking = client.Book(bookRequest);
+            var bookingResponse = client.Book(bookRequest);
+            var booking = bookingResponse.Content;
             ////RecordOutput(JsonConvert.SerializeObject(booking));
 
             RecordOutput(string.Format("{0} booking code returned.", booking.Code), Block.Ending);
@@ -222,7 +225,8 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
 
             RecordOutput(string.Format("Getting booking with code = '{0}'...", bookingCode));
             var booking = new Sdk.Hotel.Models.Booking { Code = bookingCode };
-            ////var booking = client.GetBooking(bookingCode);
+            ////var bookingResponse = client.GetBooking(bookingCode);
+            ////var booking = bookingResponse.content;
             ////RecordOutput(JsonConvert.SerializeObject(booking));
             RecordOutput("Booking got.", Block.Ending);
 

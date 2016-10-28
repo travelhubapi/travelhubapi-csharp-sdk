@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace TravelHubApi.Sdk.Hotel.Models
 {
     [Serializable]
-    public class Facilities 
+    public class Facilities
     {
         [JsonProperty(Order = 0)]
         public int Count 

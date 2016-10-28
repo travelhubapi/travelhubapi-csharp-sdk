@@ -67,18 +67,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TravelHubApi.Sdk.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.Common.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="TravelHubApi.Sdk.Hotel, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.Hotel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="TravelHubApi.Sdk.OAuth, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApi.Sdk.Client.0.0.1\lib\net45\TravelHubApi.Sdk.OAuth.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexts\Hotel\V1\HotelExamples.cs" />
@@ -92,6 +80,18 @@
     <ProjectReference Include="..\..\client\src\Client\Client.csproj">
       <Project>{71e5bfd2-313e-4f97-8284-50083ec735e6}</Project>
       <Name>Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\common\src\Common\Common.csproj">
+      <Project>{19d34303-1692-427e-a414-339bfc44aa25}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\hotel\src\Hotel\Hotel.csproj">
+      <Project>{3ae35f29-0b56-4de1-9b74-7998d71dc29d}</Project>
+      <Name>Hotel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\oauth\src\OAuth\OAuth.csproj">
+      <Project>{57a1ba12-eb63-4c26-9e50-6f39caae643e}</Project>
+      <Name>OAuth</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
