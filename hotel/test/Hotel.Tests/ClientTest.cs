@@ -15,8 +15,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Moq;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Extensions;
-using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel;
 using TravelHubApi.Sdk.Hotel.Enums;
 using TravelHubApi.Sdk.Hotel.Models;
@@ -37,7 +37,7 @@ namespace TravelHubApi.Sdk.Hotel.Tests
         {
             settings = new Settings
             {
-                Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog,
+                Environment = TravelHubApi.Sdk.Common.API.Enums.Environment.Homolog,
                 ClientId = "ClientId",
                 ClientSecret = "ClientSecret"
             };

@@ -3,6 +3,9 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using OAuth2ClientHandler;
 using OAuth2ClientHandler.Authorizer;
+using TravelHubApi.Sdk.Common.API;
+using TravelHubApi.Sdk.Common.API.Enums;
+using TravelHubApi.Sdk.Common.Extensions;
 using TravelHubApi.Sdk.Common.Helpers;
 
 namespace TravelHubApi.Sdk.OAuth
@@ -15,6 +18,8 @@ namespace TravelHubApi.Sdk.OAuth
         private OAuthHttpHandlerOptions _options;
 
         private OAuthHttpHandler _oAuthHttpHandler;
+
+        private Language _language;
         #endregion
 
         #region Constructors | Destructors
@@ -75,6 +80,8 @@ namespace TravelHubApi.Sdk.OAuth
         {
             Task<HttpResponseMessage> response;
 
+            HttpClient.DefaultRequestHeaders.AcceptLanguage.TryParseAdd(_language.GetDescription());
+            
             switch (method)
             {
                 case HttpMethods.Post:
@@ -95,10 +102,10 @@ namespace TravelHubApi.Sdk.OAuth
 
         private void Init(Settings settings, HttpMessageHandler customHandler = null)
         {
-            Host = settings.Environment == Common.Helpers.Environment.Production
+            Host = settings.Environment == Common.API.Enums.Environment.Production
                 ? ProductionHost
                 : HomologHost;
-
+            _language = settings.Language;
             AuthorizeUrl = Host + OAuthClient.AuthorizePath;
             TokenUrl = Host + OAuthClient.TokenPath;
 

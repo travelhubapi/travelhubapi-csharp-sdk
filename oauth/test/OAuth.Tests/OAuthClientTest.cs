@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using FluentAssertions;
 using RichardSzalay.MockHttp;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.OAuth.Tests.Mock;
 using Xunit;
@@ -23,7 +24,7 @@ namespace TravelHubApi.Sdk.OAuth.Tests
             this._oAuthClientMockFixture = oAuthClientMockFixture;
             _settings = new Settings
             {
-                Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog,
+                Environment = TravelHubApi.Sdk.Common.API.Enums.Environment.Homolog,
                 ClientId = "ClientId",
                 ClientSecret = "ClientSecret"
             };

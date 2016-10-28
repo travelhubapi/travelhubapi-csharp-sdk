@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using Newtonsoft.Json;
 using TravelHubApi.Sdk.Client;
-using TravelHubApi.Sdk.Common.Helpers;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Hotel;
 using TravelHubApi.Sdk.Hotel.Enums;
 using TravelHubApi.Sdk.Hotel.Models;
@@ -26,7 +26,7 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             ////-> Settings
             var settings = new Settings();
 
-            settings.Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog;
+            settings.Environment = TravelHubApi.Sdk.Common.API.Enums.Environment.Homolog;
             settings.ClientId = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_ID");
             settings.ClientSecret = System.Environment.GetEnvironmentVariable("TRAVELHUBAPI_CLIENT_SECRET");
 

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Moq;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Extensions;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel.Models;

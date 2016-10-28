@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Moq;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.OAuth;
 

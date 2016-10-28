@@ -57,21 +57,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\Enums\Language.cs" />
     <Compile Include="Exceptions\SDKRequestException.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Helpers\JSONConverters\FloatJsonConverter.cs" />
-    <Compile Include="Helpers\Environment.cs" />
+    <Compile Include="API\Enums\Environment.cs" />
     <Compile Include="Helpers\HttpMethods.cs" />
     <Compile Include="Helpers\JSONConverters\ISO8601DateFormatConverter.cs" />
     <Compile Include="Helpers\LoadFiles.cs" />
-    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="API\Settings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

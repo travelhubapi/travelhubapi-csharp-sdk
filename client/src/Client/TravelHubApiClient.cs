@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Helpers;
 using TravelHubApi.Sdk.Hotel;
 using TravelHubApi.Sdk.OAuth;

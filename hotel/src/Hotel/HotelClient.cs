@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text;
 using QueryString;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Exceptions;
 using TravelHubApi.Sdk.Common.Extensions;
 using TravelHubApi.Sdk.Common.Helpers;
@@ -27,7 +28,7 @@ namespace TravelHubApi.Sdk.Hotel
         #region Constructors | Destructors
         public HotelClient(Settings settings, OAuthClient oauth)
         {
-            _host = settings.Environment == Common.Helpers.Environment.Production
+            _host = settings.Environment == Common.API.Enums.Environment.Production
                   ? HotelClient.ProductionHost
                   : HotelClient.HomologHost;
 

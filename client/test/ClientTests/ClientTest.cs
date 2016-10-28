@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Text;
 using FluentAssertions;
 using TravelHubApi.Sdk.Client.Tests.Mock;
+using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Helpers;
 using Xunit;
 
@@ -17,7 +18,7 @@ namespace TravelHubApi.Sdk.Client.Tests
         {
             settings = new Settings
             {
-                Environment = TravelHubApi.Sdk.Common.Helpers.Environment.Homolog,
+                Environment = TravelHubApi.Sdk.Common.API.Enums.Environment.Homolog,
                 ClientId = "ClientId",
                 ClientSecret = "ClientSecret"
             };
