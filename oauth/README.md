@@ -34,7 +34,7 @@ Create a OAuthClient instance
 
 Name        | Type          |  Description
 ----------- | ------------- | -----------
-`settings`  | [`Settings`](../common/src/Common/Helpers/Settings.cs)| Settings with environment and credentials
+`settings`  | [`Settings`](../common/src/Common/API/Settings.cs)| Settings with environment and credentials
 
 #### `new OAuthClient(Settings settings, HttpMessageHandler customHandler)`
 
@@ -44,7 +44,7 @@ Create a OAuthClient instance with a custom http handler
 
 Name        | Type          |  Description
 ----------- | ------------- | -----------
-`settings`  | [`Settings`](../common/src/Common/Helpers/Settings.cs)| Settings with environment and credentials
+`settings`  | [`Settings`](../common/src/Common/API/Settings.cs)| Settings with environment and credentials
 `customHandler` | `HttpMessageHandler` | Custom httpHandler to be called before OAuth request
 
 ### Properties
