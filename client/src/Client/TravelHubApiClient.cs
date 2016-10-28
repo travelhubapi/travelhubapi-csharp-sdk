@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 using TravelHubApi.Sdk.Common.Helpers;
-using TravelHubApi.Sdk.Hotel.V1;
+using TravelHubApi.Sdk.Hotel;
 using TravelHubApi.Sdk.OAuth;
 
 namespace TravelHubApi.Sdk.Client
@@ -12,7 +12,7 @@ namespace TravelHubApi.Sdk.Client
         public TravelHubApiClient(Settings settings, OAuthClient oauth)
         {
             OAuthClient = oauth;
-            HotelClient = new Hotel.V1.HotelClient(settings, OAuthClient);
+            HotelClient = new Hotel.HotelClient(settings, OAuthClient);
         }
 
         public TravelHubApiClient(Settings settings)

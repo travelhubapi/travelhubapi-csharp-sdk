@@ -64,33 +64,33 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="V1\ClientTest.cs" />
-    <Compile Include="V1\Mock\HotelMock.cs" />
+    <Compile Include="ClientTest.cs" />
+    <Compile Include="Mock\HotelMock.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="V1\Mock\Json\RequestBooking.json">
+    <None Include="Mock\Json\RequestBooking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\RequestCancellationPolicies.json">
+    <None Include="Mock\Json\RequestCancellationPolicies.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\ResponseAvailabilities.json">
+    <None Include="Mock\Json\ResponseAvailabilities.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\ResponseBooking.json">
+    <None Include="Mock\Json\ResponseBooking.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\ResponseFacilities.json">
+    <None Include="Mock\Json\ResponseFacilities.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\ResponseHotel.json">
+    <None Include="Mock\Json\ResponseHotel.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\ResponseImages.json">
+    <None Include="Mock\Json\ResponseImages.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="V1\Mock\Json\ResponseLocations.json">
+    <None Include="Mock\Json\ResponseLocations.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

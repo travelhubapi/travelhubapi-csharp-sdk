@@ -5,11 +5,11 @@ using System.Linq;
 using Newtonsoft.Json;
 using TravelHubApi.Sdk.Client;
 using TravelHubApi.Sdk.Common.Helpers;
-using TravelHubApi.Sdk.Hotel.V1;
-using TravelHubApi.Sdk.Hotel.V1.Enums;
-using TravelHubApi.Sdk.Hotel.V1.Models;
-using TravelHubApi.Sdk.Hotel.V1.Models.Parameters;
-using TravelHubApi.Sdk.Hotel.V1.Models.Parameters.Body;
+using TravelHubApi.Sdk.Hotel;
+using TravelHubApi.Sdk.Hotel.Enums;
+using TravelHubApi.Sdk.Hotel.Models;
+using TravelHubApi.Sdk.Hotel.Models.Parameters;
+using TravelHubApi.Sdk.Hotel.Models.Parameters.Body;
 
 namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
 {
@@ -84,7 +84,7 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             return location.Id;
         }
 
-        public static Sdk.Hotel.V1.Models.Hotel GetHotelAvailable(
+        public static Sdk.Hotel.Models.Hotel GetHotelAvailable(
             HotelClient client,
             string locationId,
             DateTime checkIn,
@@ -128,9 +128,9 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             return hotel;
         }
 
-        public static Sdk.Hotel.V1.Models.Booking Book(
+        public static Sdk.Hotel.Models.Booking Book(
             HotelClient client, 
-            Sdk.Hotel.V1.Models.Hotel hotel,
+            Sdk.Hotel.Models.Hotel hotel,
             DateTime checkIn,
             DateTime checkOut)
         {
@@ -214,14 +214,14 @@ namespace TravelHubApi.Sdk.Examples.Contexts.Hotel.V1
             return booking;
         }
 
-        public static Sdk.Hotel.V1.Models.Booking GetBooking(HotelClient client, string bookingCode)
+        public static Sdk.Hotel.Models.Booking GetBooking(HotelClient client, string bookingCode)
         {
             RecordOutput("GetBooking", Block.Starting);
 
             RecordOutputWriteLine();
 
             RecordOutput(string.Format("Getting booking with code = '{0}'...", bookingCode));
-            var booking = new Sdk.Hotel.V1.Models.Booking { Code = bookingCode };
+            var booking = new Sdk.Hotel.Models.Booking { Code = bookingCode };
             ////var booking = client.GetBooking(bookingCode);
             ////RecordOutput(JsonConvert.SerializeObject(booking));
             RecordOutput("Booking got.", Block.Ending);
