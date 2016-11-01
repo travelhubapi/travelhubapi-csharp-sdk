@@ -227,7 +227,7 @@ Name        | Type      |  Description
 |`GetCancellationPolicies` |`POST`| [`/v1/bookings/{{checkIn}}/{{checkOut}}/cancellationPolicies`](#)
 |`Book`              |`POST`| [`/v1/bookings`](#)
 |`GetBooking`        |`GET`| [`/v1/bookings/{{track}}`](#)
-|`CacelBooking`      |`DELETE`| [`/v1/bookings/{{track}}/{{vendorId}}`](#)
+|`CancelBooking`      |`DELETE`| [`/v1/bookings/{{track}}/{{vendorId}}`](#)
 
 ---
 
