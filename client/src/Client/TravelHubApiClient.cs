@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using TravelHubApi.Sdk.Common.API;
 using TravelHubApi.Sdk.Common.Helpers;
@@ -43,17 +44,26 @@ namespace TravelHubApi.Sdk.Client
         #endregion
 
         #region Public Methods
-        public Task<HttpResponseMessage> GetAsync(string uri, HttpContent content = null)
+        public Task<HttpResponseMessage> GetAsync(
+            string uri,
+            HttpContent content = null,
+            CancellationToken cancelToken = default(CancellationToken))
         {
             return OAuthClient.RequestAsync(HttpMethods.Get, uri, content);
         }
 
-        public Task<HttpResponseMessage> PostAsync(string uri, HttpContent content = null)
+        public Task<HttpResponseMessage> PostAsync(
+            string uri,
+            HttpContent content = null,
+            CancellationToken cancelToken = default(CancellationToken))
         {
             return OAuthClient.RequestAsync(HttpMethods.Post, uri, content);
         }
 
-        public Task<HttpResponseMessage> DeleteAsync(string uri, HttpContent content = null)
+        public Task<HttpResponseMessage> DeleteAsync(
+            string uri,
+            HttpContent content = null,
+            CancellationToken cancelToken = default(CancellationToken))
         {
             return OAuthClient.RequestAsync(HttpMethods.Delete, uri, content);
         }

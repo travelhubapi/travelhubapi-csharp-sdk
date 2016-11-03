@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using OAuth2ClientHandler;
 using OAuth2ClientHandler.Authorizer;
@@ -76,20 +77,24 @@ namespace TravelHubApi.Sdk.OAuth
         public OAuthHttpClient HttpClient { get; set; }
         #endregion
 
-        public virtual Task<HttpResponseMessage> RequestAsync(HttpMethods method, string uri, HttpContent content = null)
+        public virtual Task<HttpResponseMessage> RequestAsync(
+            HttpMethods method, 
+            string uri,
+            HttpContent content = null,
+            CancellationToken cancelToken = default(CancellationToken))
         {
             Task<HttpResponseMessage> response;
 
             switch (method)
             {
                 case HttpMethods.Post:
-                    response = HttpClient.PostAsync(uri, content);
+                    response = HttpClient.PostAsync(uri, content, cancelToken);
                     break;
                 case HttpMethods.Get:
-                    response = HttpClient.GetAsync(uri);
+                    response = HttpClient.GetAsync(uri, cancelToken);
                     break;
                 case HttpMethods.Delete:
-                    response = HttpClient.DeleteAsync(uri);
+                    response = HttpClient.DeleteAsync(uri, cancelToken);
                     break;
                 default:
                     throw new NotImplementedException();

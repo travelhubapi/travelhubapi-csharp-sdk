@@ -3,6 +3,7 @@ using System.Linq.Expressions;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Moq;
 using TravelHubApi.Sdk.Common.API;
@@ -82,7 +83,8 @@ namespace TravelHubApi.Sdk.Client.Tests.Mock
                     It.Is<HttpMethods>(
                         i => i.Equals(method)),
                         It.Is<string>(i => i == uri),
-                        It.Is<HttpContent>(expression)))
+                        It.Is<HttpContent>(expression),
+                        It.Is<CancellationToken>(c => c == default(CancellationToken))))
                 .Returns(() =>
                 {
                     var responseMessage = new HttpResponseMessage(responseStatusCode);

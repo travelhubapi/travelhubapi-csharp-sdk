@@ -55,6 +55,26 @@ Url production environment
 
 ### Methods
 
+#### GetLocationsAsync
+
+Get the possible locations to availabilities of hotels filtering by description.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`description`| `string` | Description of a place, can be a part of the city or state name (minimum of 3 characters)
+`limit`  | `int`  | Maximum number of items to be returned in response
+`countryCode`  | `string`  | Filter locations by country code (ISO 3166)
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Locations`](src/Hotel/Models/Locations.cs)`>>` | A list of locations
+
+
 #### GetLocations
 
 Get the possible locations to availabilities of hotels filtering by description.
@@ -72,6 +92,32 @@ Name        | Type      |  Description
  Type                        | Description
  --------------------------- | -----------
  `ApiResponse<`[`Locations`](src/Hotel/Models/Locations.cs)`>` | A list of locations
+
+#### GetAvailabilitiesAsync
+
+Check availability of hotels.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`locationId`| `string`  | Location ID from get locations api
+`checkIn`   | `DateTime`| Check-in date (ISO 8601 date with YYYY-MM-DD format)
+`checkOut`  | `DateTime`| Check-out date (ISO 8601 date with YYYY-MM-DD format)
+`rooms`     | [`RoomParameter`](src/Hotel/Models/Parameters/RoomParameter.cs) | Information about accommodation and guests
+`currencyIso` | [`CurrencyIso`](src/Hotel/Models/Enums/CurrencyIso.cs)  | Currency ISO in which they will be returned the hotel rate values
+`hotelName` | `string`  | Filter the hotels by the part of name
+`minimumStars`| `decimal`| Filter the hotels by minimum stars that hotel must have
+`basicInfo`  | `bool`   | Get hotel basic (true) or complete (default or false) information
+`bookingAvailability`| [`BookingAvailability`](src/Hotel/Models/Enums/BookingAvailability.cs)  | Booking availability type: <br>**`AvailableNow`** - Hotels available for booking <br> **`AvailableNowAndOnRequest`** - - Hotels available for booking and also booking on request
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Availabilities`](src/Hotel/Models/Availabilities.cs)`>>` | List of availabilities of hotel
+
 
 #### GetAvailabilities
 
@@ -97,6 +143,23 @@ Name        | Type      |  Description
  --------------------------- | -----------
  `ApiResponse<`[`Availabilities`](src/Hotel/Models/Availabilities.cs)`>` | List of availabilities of hotel
 
+#### GetHotelAsync
+
+Get hotel informations.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`track`     | `string`  | Hotel track code
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Hotel`](src/Hotel/Models/Hotel.cs)`>>` | Hotel Information
+
 #### GetHotel
 
 Get hotel informations.
@@ -112,6 +175,23 @@ Name        | Type      |  Description
  Type                        | Description
  --------------------------- | -----------
  `ApiResponse<`[`Hotel`](src/Hotel/Models/Hotel.cs)`>` | Hotel Information
+
+#### GetFacilitiesAsync
+
+Get hotel Facilities.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`track`     | `string`  | Hotel track code
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Facilities`](src/Hotel/Models/Facilities.cs)`>>` | List of hotel Facilities
 
 #### GetFacilities
 
@@ -129,6 +209,23 @@ Name        | Type      |  Description
  --------------------------- | -----------
  `ApiResponse<`[`Facilities`](src/Hotel/Models/Facilities.cs)`>` | List of hotel Facilities
 
+#### GetImagesAsync
+
+Get hotel Images.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`track`     | `string`  | Hotel track code
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Images`](src/Hotel/Models/Images.cs)`>>` | List of hotel Images
+
 #### GetImages
 
 Get hotel Images.
@@ -144,6 +241,25 @@ Name        | Type      |  Description
  Type                        | Description
  --------------------------- | -----------
  `ApiResponse<`[`Images`](src/Hotel/Models/Images.cs)`>` | List of hotel Images
+
+#### GetCancellationPoliciesAsync
+
+Get hotel the cancellation policies.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`checkIn`   | `DateTime`| Check-in date (ISO 8601 date with YYYY-MM-DD format)
+`checkOut`  | `DateTime`| Check-out date (ISO 8601 date with YYYY-MM-DD format)
+`hotel`     | [`Hotel`](src/Hotel/Models/Hotel.cs)| Hotel that has the cancellation policies
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`CancellationPolicies`](src/Hotel/Models/CancellationPolicies.cs)`>>` | Hotel cancellation policies
 
 #### GetCancellationPolicies
 
@@ -163,6 +279,23 @@ Name        | Type      |  Description
  --------------------------- | -----------
  `ApiResponse<`[`CancellationPolicies`](src/Hotel/Models/CancellationPolicies.cs)`>` | Hotel cancellation policies
 
+#### BookAsync
+
+Book a hotel without payment.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`bookRequest`| [`BookRequest`](src/Hotel/Models/Parameters/Body/BookRequest.cs)| Booking to be created
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Booking`](src/Hotel/Models/Booking.cs)`>>` | Booking created with locators and expiration date
+
 #### Book
 
 Book a hotel without payment.
@@ -179,6 +312,23 @@ Name        | Type      |  Description
  --------------------------- | -----------
  `ApiResponse<`[`Booking`](src/Hotel/Models/Booking.cs)`>` | Booking created with locators and expiration date
 
+#### GetBookingAsync
+
+Get booking information.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`bookingCode`| `string` | Booking code
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ `Task<ApiResponse<`[`Booking`](src/Hotel/Models/Booking.cs)`>>` | Booking information
+
 #### GetBooking
 
 Get booking information.
@@ -194,6 +344,24 @@ Name        | Type      |  Description
  Type                        | Description
  --------------------------- | -----------
  `ApiResponse<`[`Booking`](src/Hotel/Models/Booking.cs)`>` | Booking information
+
+#### CancelBookingAsync
+
+Cancel booking.
+
+**Parameters**
+
+Name        | Type      |  Description
+----------- | --------- | -----------
+`bookingCode`| `string` | Booking code
+`vendorId`  | `string`  | Vendor Id
+`cancelToken`   | `CancellationToken` | Cancellation token
+
+**Return**
+
+ Type                        | Description
+ --------------------------- | -----------
+ Task<[`ApiResponse`](src/Hotel/Models/ApiResponse.cs)> | Response info
 
 #### CancelBooking
 
