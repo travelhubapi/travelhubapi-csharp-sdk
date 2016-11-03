@@ -98,6 +98,7 @@ Name        | Type          |  Description
 `method`    | `HttpMethods` | Request method
 `uri`       | `string`      | Travelhubapi endpoint
 `content`   | `HttpContent` | Request content
+`cancelToken`   | `CancellationToken` | Cancellation token
 
 **Return**
 
