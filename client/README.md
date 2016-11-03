@@ -66,6 +66,7 @@ Name        | Type          |  Description
 ----------- | ------------- | -----------
 `uri`       | `string`      | Travelhubapi endpoint
 `content`   | `HttpContent` | Request content
+`cancelToken`   | `CancellationToken` | Cancellation token
 
 **Return**
 
@@ -83,6 +84,7 @@ Name        | Type          |  Description
 ----------- | ------------- | -----------
 `uri`       | `string`      | Travelhubapi endpoint
 `content`   | `HttpContent` | Request content
+`cancelToken`   | `CancellationToken` | Cancellation token
 
 **Return**
 
@@ -100,6 +102,7 @@ Name        | Type          |  Description
 ----------- | ------------- | -----------
 `uri`       | `string`      | Travelhubapi endpoint
 `content`   | `HttpContent` | Request content
+`cancelToken`   | `CancellationToken` | Cancellation token
 
 **Return**
 
