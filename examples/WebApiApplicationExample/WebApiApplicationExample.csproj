@@ -70,7 +70,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="OAuth2ClientHandler, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApiSDK.0.0.1\lib\net45\OAuth2ClientHandler.dll</HintPath>
+      <HintPath>..\..\packages\TravelHubApiSDK.0.1.0\lib\net45\OAuth2ClientHandler.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="QueryString, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -172,11 +172,19 @@
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="TravelHubApi.Sdk.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApiSDK.0.0.1\lib\net45\TravelHubApi.Sdk.Common.dll</HintPath>
+      <HintPath>..\..\packages\TravelHubApiSDK.0.1.0\lib\net45\TravelHubApi.Sdk.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="TravelHubApiSDK, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\TravelHubApiSDK.0.0.1\lib\net45\TravelHubApiSDK.dll</HintPath>
+    <Reference Include="TravelHubApi.Sdk.Hotel, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TravelHubApiSDK.0.1.0\lib\net45\TravelHubApi.Sdk.Hotel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TravelHubApi.Sdk.OAuth, Version=0.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TravelHubApiSDK.0.1.0\lib\net45\TravelHubApi.Sdk.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TravelHubApiSDK, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TravelHubApiSDK.0.1.0\lib\net45\TravelHubApiSDK.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -341,16 +349,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\hotel\src\Hotel\Hotel.csproj">
-      <Project>{3ae35f29-0b56-4de1-9b74-7998d71dc29d}</Project>
-      <Name>Hotel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\oauth\src\OAuth\OAuth.csproj">
-      <Project>{57a1ba12-eb63-4c26-9e50-6f39caae643e}</Project>
-      <Name>OAuth</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
